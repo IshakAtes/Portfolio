@@ -1,0 +1,64 @@
+@import './../../../styles.scss';
+
+header {
+    background-color: #141D2F;
+    height: 100vh;
+    >img {
+        width: 100vw;
+        position: absolute;
+        top: 570px;
+        z-index: 3;
+    }
+}
+
+.textMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 297px;
+    left: 622px;
+    >.firstText {
+        // position: relative;
+        rotate: -90deg;
+        font-size: 64px;
+        color: whitesmoke;
+        line-height: 77px;
+        margin-top: 32px;
+    }
+    >.secondText {
+        @include allCenter(center, flex-start);
+        flex-direction: column;
+        >span {
+            @include allCenter(center, center);
+            text-align: start;
+            width: max-content;
+        }
+        >.nameText {
+            font-size: 90px;
+            line-height: 108px;
+            color: whitesmoke;
+        }
+        >.devText {
+            font-size: 58px;
+            color: #FF4747;
+        }
+    }
+}
+
+.heroCt {
+    position: relative;
+}
+
+.hero {
+    z-index: 2;
+    position: absolute;
+}
+
+.spreads {
+    z-index: 1;
+    position: absolute;
+    left: -100px;
+    top: 100px;
+    width: 950px;
+}
