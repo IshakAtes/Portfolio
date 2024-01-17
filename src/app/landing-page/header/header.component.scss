@@ -13,8 +13,9 @@ header {
 
 .textMain {
     position: absolute;
+    z-index: 4;
     top: 297px;
-    left: 622px;
+    left: 700px;
     @include allCenter();
     flex-direction: column;
     >button {
@@ -24,7 +25,7 @@ header {
         background-color: #FA7902;
         color: whitesmoke;
         font-family: 'Poppins';
-        
+        cursor: pointer;
     }
 }
 
