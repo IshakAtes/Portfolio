@@ -1,24 +1,28 @@
 @import './../../../styles.scss';
 
 header {
+    // position: relative;
     background-color: #141D2F;
     height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     >img {
         width: 100%;
         position: absolute;
-        top: 400px;
+        top: 200px;
         z-index: 3;
     }
 }
 
 .textMain {
-    position: absolute;
     z-index: 4;
-    top: 297px;
-    left: 700px;
+    padding-top: 60px;
+    padding-right: 300px;
     @include allCenter();
     flex-direction: column;
     >button {
+        margin-top: 24px;
         width: 165px;
         height: 58px;
         border-radius: 10px;
@@ -63,19 +67,36 @@ header {
     }
 }
 
-.heroCt {
-    position: relative;
-}
+
 
 .hero {
     z-index: 2;
     position: absolute;
+    top: 90px;
+    left: 120px;
+    width: 550px;
+    height: auto;
 }
 
 .spreads {
     z-index: 1;
     position: absolute;
-    left: -100px;
-    top: 100px;
-    width: 950px;
+    left: -90px;
+    top: 30px;
+    width: 1000px;
+}
+
+
+.referenceCt {
+    @include allCenter();
+    gap: 40px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 3;
+    >.underlineStyle {
+        width: 100px;
+        border: 4px solid #FF4747;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
 }
