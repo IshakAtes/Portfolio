@@ -22,14 +22,18 @@ header {
     @include allCenter();
     flex-direction: column;
     >button {
+        // padding: 15px 30px 15px 30px;
+        gap: 10;
         margin-top: 24px;
         width: 165px;
         height: 58px;
         border-radius: 10px;
         background-color: #FA7902;
+        font-size: 23px;
         color: whitesmoke;
         font-family: 'Poppins';
         cursor: pointer;
+        border: 0
     }
 }
 
@@ -55,6 +59,7 @@ header {
         }
         >.nameText {
             font-family: 'Poppins';
+            font-weight: bold;
             font-size: 90px;
             line-height: 108px;
             color: whitesmoke;
@@ -93,10 +98,42 @@ header {
     position: absolute;
     bottom: 0px;
     z-index: 3;
+    height: 40px;
     >.underlineStyle {
         width: 100px;
-        border: 4px solid #FF4747;
+        border: 2px solid #FF4747;
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
+    }
+    >.referenceIcons {
+        transition: all 125ms ease-in-out;
+        width: 42px;
+        height: 40px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    >.gitIcon {
+        background-image: url('/assets/img/gitDefault.png');
+        &:hover {
+            background-image: url('/assets/img/gitHover.png');
+        }
+    }
+    >.mailIcon {
+        background-image: url('./../../../assets/img/mailDefault.png');
+        &:hover {
+            background-image: url('./../../../assets/img/mailHover.png');
+        }
+    }
+    >.linkedIcon {
+        background-image: url('./../../../assets/img/linkedDefault.png');
+        &:hover {
+            background-image: url('./../../../assets/img/linkedHover.png');
+        }
+    }
+    >span {
+        color:whitesmoke;
+        font-size:23px;
+        font-family: 'poppins';
     }
 }
