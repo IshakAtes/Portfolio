@@ -1,0 +1,9 @@
+@import './../../../styles.scss';
+
+.mainSkillCt {
+    background-color: #141D2F;
+    @include allCenter(space-around, center);
+    >.skillIconCt {
+        @include allCenter();
+    }
+}
