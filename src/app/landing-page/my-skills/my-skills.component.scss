@@ -1,9 +1,31 @@
 @import './../../../styles.scss';
 
 .mainSkillCt {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 200px;
     background-color: #141D2F;
     @include allCenter(space-around, center);
     >.skillIconCt {
-        @include allCenter();
+        @include allCenter(flex-start, center);
+        flex-wrap: wrap;
+        gap: 100px;
+        >div {
+            @include allCenter();
+            flex-direction: column;
+            height: 100px;
+            gap: 10px;
+            >span {
+                font-size: 16px;
+                font-family: 'poppins';
+                color: whitesmoke;
+            }
+        }
+    }
+}
+
+.skillContentCt {
+    h2 {
+        color:whitesmoke;
     }
 }
