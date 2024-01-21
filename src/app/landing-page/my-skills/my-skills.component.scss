@@ -3,10 +3,20 @@
 .mainSkillCt {
     padding-left: 200px;
     padding-right: 200px;
-    padding-top: 200px;
+    padding-top: 300px;
     background-color: #141D2F;
+    position: relative;
     @include allCenter(space-around, center);
+    >img {
+        position: absolute;
+        top: 400px;
+        left: -550px;
+        z-index: 1;
+        rotate: 180deg;
+        transform: scaleX(-1);
+    }
     >.skillIconCt {
+        z-index: 2;
         @include allCenter(flex-start, center);
         flex-wrap: wrap;
         gap: 100px;
@@ -28,12 +38,27 @@
     @include allCenter(unset, flex-end);
     flex-direction: column;
     gap: 70px;
-    h2 {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 90px;
-        font-family: 'poppins';
-        color:whitesmoke;
+    z-index: 2;
+    >div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        .decentLine {
+            width: 70px;
+            border: 2px solid #ff4747;
+            right: 0;
+            position: absolute;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+        >h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 90px;
+            font-family: 'poppins';
+            color:whitesmoke;
+        }
     }
     >span {
         text-align: end;
