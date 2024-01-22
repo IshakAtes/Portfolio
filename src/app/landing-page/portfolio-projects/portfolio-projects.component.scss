@@ -1,0 +1,39 @@
+@import './../../../styles.scss';
+
+.portFolioMainCt {
+    background-color: #141D2F;
+    .portfolioHeadline {
+        @include allCenter();
+        flex-direction: column;
+        >span {
+            font-size: 16px;
+            font-family: 'poppins';
+            color: whitesmoke;
+        }
+        .headlineCt {
+            @include allCenter();
+            >.decentline {
+                width: 109px;
+                border:2px solid #ff4747;
+                rotate: -0deg;
+                position: absolute;
+                left: 380px;
+                border-radius: 50px;
+            }
+            >h2 {
+                gap: 10;
+                font-size: 90px;
+                font-family: 'poppins';
+                color: whitesmoke;
+            }
+            >.decentlineRight {
+                border: 2px solid #ff4747;
+                position: absolute;
+                width: 484px;
+                right: 0;
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
+            }
+        }
+    }
+}
