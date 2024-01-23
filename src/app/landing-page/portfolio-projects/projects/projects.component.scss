@@ -1,5 +1,8 @@
-p {
-    color: whitesmoke;
-    font-size: 50px;
-    text-decoration: underline;
+@import './../../../../styles.scss';
+
+.projectContainer {
+    background-color: aquamarine;
+    width: 1200px;
+    @include allCenter(space-between, center);
+    gap: 35px;
 }

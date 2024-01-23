@@ -2,6 +2,8 @@
 
 .portFolioMainCt {
     background-color: #141D2F;
+    @include allCenter();
+    flex-direction: column;
     .portfolioHeadline {
         @include allCenter();
         flex-direction: column;
