@@ -1,8 +1,84 @@
 @import './../../../../styles.scss';
 
 .projectContainer {
-    background-color: aquamarine;
     width: 1200px;
     @include allCenter(space-between, center);
     gap: 35px;
+    >img {
+        width: 500px;
+        height: auto;
+    }
+    >div {
+        gap: 10;
+        >h3 {
+            color: #ff4747;
+            font-size: 32px;
+            font-weight: 700;
+            font-family: 'poppins';
+            line-height: 38px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        >span {
+            color: #FA7902;
+            font-size: 23px;
+            font-weight: 400;
+            font-family: 'poppins';
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+        >p {
+            width: 600px;
+            font-family: 'poppins';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: whitesmoke;
+        }
+        >div {
+            @include allCenter(space-between, center);
+            max-width: 400px;
+        }
+    }
+}
+
+.testBtn {
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: #FF4747;
+    color: whitesmoke;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    &:hover {
+        background-color: #FA7902;
+    }
+}
+
+.gitBtn {
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+    border: 1px;
+    gap: 10px;
+    border: 1px solid #FA7902;
+    background-color: transparent;
+    font-family: 'Poppins';
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: whitesmoke;
+    cursor: pointer;
+    &:hover {
+        background-color: #FA7902;
+    }
 }

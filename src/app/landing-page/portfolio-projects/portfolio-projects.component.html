@@ -7,5 +7,13 @@
         </div>
         <span>This page is a sample of my work - please feel free to try them out.</span>
     </div>
-    <app-projects></app-projects>
+    <app-projects
+        *ngFor="let c of allProjects;
+        let i = index;"
+        [item]="allProjects[i]['project']"
+        [framework]="allProjects[i]['lang']"
+        [imgUrl]="allProjects[i]['img']"
+        [content]="allProjects[i]['description']">
+    </app-projects>
+    <!-- *ngFor="let projects of allProjects()" [projects] = "projects"  [item]="allProjects" -->
 </div>
