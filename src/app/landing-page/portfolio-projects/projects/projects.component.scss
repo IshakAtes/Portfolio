@@ -4,6 +4,8 @@
     width: 1200px;
     @include allCenter(space-between, center);
     gap: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     >img {
         width: 500px;
         height: auto;

@@ -9,11 +9,13 @@
     </div>
     <app-projects
         *ngFor="let c of allProjects;
-        let i = index;"
+        let i = index;
+        let isEven = even;
+        let isOdd = odd;"
         [item]="allProjects[i]['project']"
         [framework]="allProjects[i]['lang']"
         [imgUrl]="allProjects[i]['img']"
-        [content]="allProjects[i]['description']">
+        [content]="allProjects[i]['description']"
+        [i]= "i">
     </app-projects>
-    <!-- *ngFor="let projects of allProjects()" [projects] = "projects"  [item]="allProjects" -->
 </div>

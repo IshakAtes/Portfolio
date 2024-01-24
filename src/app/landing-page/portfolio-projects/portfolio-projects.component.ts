@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProjectsComponent } from './projects/projects.component';
 import { NgFor } from '@angular/common';
+import { NgClass } from '@angular/common';
 
 // interface ProjectStructure {
 //   id: number;
@@ -12,7 +13,7 @@ import { NgFor } from '@angular/common';
 @Component({
   selector: 'app-portfolio-projects',
   standalone: true,
-  imports: [ProjectsComponent, NgFor],
+  imports: [ProjectsComponent, NgFor, NgClass],
   templateUrl: './portfolio-projects.component.html',
   styleUrl: './portfolio-projects.component.scss'
 })
@@ -39,10 +40,10 @@ export class PortfolioProjectsComponent {
       "description": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale."
     },
     {
-      "id": 2,
-      "img": "/assets/img/sharkie_mockup.png",
-      "project": "Sharkie",
-      "lang": "HTML | CSS | Javascript",
+      "id": 3,
+      "img": "/assets/img/Pkedex.png",
+      "project": "Pokedex",
+      "lang": "HTML | CSS | Javascript | API",
       "description": "lorem Ipsum"
     },
   ];
