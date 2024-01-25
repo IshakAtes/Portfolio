@@ -16,7 +16,6 @@ export class ProjectsComponent {
   @Input() i: number = 0;
 
   constructor() {
-    console.log(this.i);
   }
 
 }
