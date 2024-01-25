@@ -48,6 +48,8 @@ header {
         color: whitesmoke;
         line-height: 77px;
         margin-top: 10px;
+        font-weight: 400;
+        letter-spacing: 0em;
     }
     >.secondText {
         @include allCenter(center, flex-start);
@@ -59,15 +61,21 @@ header {
         }
         >.nameText {
             font-family: 'Poppins';
-            font-weight: bold;
             font-size: 90px;
             line-height: 108px;
             color: whitesmoke;
+            font-weight: 700;
+            letter-spacing: 14px;
         }
         >.devText {
             font-family: 'Poppins';
             font-size: 58px;
             color: #FF4747;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: 70px;
+            letter-spacing: 0em;
+            text-align: left;
         }
     }
 }

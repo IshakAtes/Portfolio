@@ -4,6 +4,7 @@
     background-color: #141D2F;
     @include allCenter();
     flex-direction: column;
+    position: relative;
     .portfolioHeadline {
         @include allCenter();
         flex-direction: column;
@@ -38,4 +39,13 @@
             }
         }
     }
+}
+
+.pjRedShape {
+    width: 640px;
+    height: 750px;
+    top: 1254.55px;
+    left: -70px;
+    rotate: 360deg;
+    position: absolute;
 }

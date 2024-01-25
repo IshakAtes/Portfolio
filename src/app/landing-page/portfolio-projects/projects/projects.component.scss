@@ -6,6 +6,8 @@
     gap: 35px;
     padding-top: 50px;
     padding-bottom: 50px;
+    position: relative;
+    z-index: 2;
     >img {
         width: 500px;
         height: auto;
