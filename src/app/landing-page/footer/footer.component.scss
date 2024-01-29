@@ -1,0 +1,44 @@
+@import './../../../styles.scss';
+
+.footerContainer {
+    position: relative;
+    bottom: 0;
+    @include allCenter(space-around, center);
+    z-index: 1;
+    background-color: #141D2F;
+    height: 300px;
+    >.footerLeft {
+        >div {
+            @include allCenter();
+            >.firstLetter {
+                font-size: 50px;
+                color: #ff4747;
+                font-family: 'Poppins';
+                font-weight: 600;
+            }
+            >.nameLetters {
+                font-size: 50px;
+                color: whitesmoke;
+                font-family: 'Poppins';
+                font-weight: 600;
+            }
+            >div {
+                @include allCenter(center, baseline);
+                position: relative;
+                >span {
+                    font-size: 50px;
+                    color: whitesmoke;
+                    font-family: 'Poppins';
+                    font-weight: 600;
+                }
+                >img {
+                    width: 24px;
+                    height: 26px;
+                    left: 4px;
+                    position: absolute;
+                    bottom: 20px;
+                }
+            }
+        }
+    }
+}

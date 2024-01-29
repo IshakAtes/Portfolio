@@ -29,10 +29,12 @@
     @include allCenter(space-between, flex-start);
     margin-left: 100px;
     margin-right: 100px;
+    position: relative;
     >.announcementCt {
         @include allCenter(center, flex-start);
         flex-direction: column;
         width: 500px;
+        z-index: 1;
         >span {
             font-family: 'Poppins';
             font-size: 32px;
@@ -62,6 +64,32 @@
             }
         }
     }
+    >img {
+        position: absolute;
+        left: -140px;
+        bottom: -240px;
+    }
+}
+
+.formCt {
+    margin-bottom: 100px;
+    >.fastUp {
+        @include allCenter(flex-end, center);
+        width: 100%;
+        margin-top: 50px;
+        >.upImg {
+            background-image: url(/assets/img/DefaultUp.png);
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            &:hover {
+                background-image: url(/assets/img/hoverUp.png);
+            }
+        }
+    }
 }
 
 form {
@@ -82,6 +110,10 @@ form {
         letter-spacing: 0em;
         text-align: left;
         color:whitesmoke;
+        &:hover {
+            border: 1px solid #FA7902;
+            cursor: pointer;
+        }
     }
     >textarea {
         width: 617px;
@@ -97,6 +129,15 @@ form {
         letter-spacing: 0em;
         text-align: left;
         text-decoration-color: whitesmoke;
+        &:hover {
+            border: 1px solid #FA7902;
+            cursor: pointer;
+        }
+        &::-webkit-resizer {
+            content: '';
+            background-image: url('/assets/img/resizer.png');
+            background-repeat: no-repeat;
+        }
     }
     >div {
         @include allCenter(flex-start, center);
@@ -108,23 +149,36 @@ form {
             letter-spacing: 0em;
             text-align: left;
             color: whitesmoke;
+            >a {
+                text-decoration: none;
+                color:#ff4747;
+            }
         }
     }
-    >button {
-        border: 0;
-        padding: 15px 30px 15px 30px;
-        border-radius: 10px;
-        gap: 10px;
-        background-color: #B6B6B6;
-        font-family: 'Poppins';
-        font-size: 23px;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0em;
-        text-align: left;
-        color:whitesmoke;
+    >.btnContainer {
+        @include allCenter();
+        width: 100%;
+        >button {
+            border: 0;
+            padding: 15px 30px 15px 30px;
+            border-radius: 10px;
+            gap: 10px;
+            background-color: #B6B6B6;
+            font-family: 'Poppins';
+            font-size: 23px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0em;
+            color:whitesmoke;
+        }
     }
 }
+
+
+
+
+
+
 
 
 
