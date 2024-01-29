@@ -3,42 +3,101 @@
 .footerContainer {
     position: relative;
     bottom: 0;
+    border-top: 4px solid #fa7902;
     @include allCenter(space-around, center);
     z-index: 1;
     background-color: #141D2F;
     height: 300px;
-    >.footerLeft {
+}
+
+
+.footerLeft {
+    >div {
+        @include allCenter();
+        >.firstLetter {
+            font-size: 50px;
+            color: #ff4747;
+            font-family: 'Poppins';
+            font-weight: 600;
+        }
+        >.nameLetters {
+            font-size: 50px;
+            color: whitesmoke;
+            font-family: 'Poppins';
+            font-weight: 600;
+        }
         >div {
-            @include allCenter();
-            >.firstLetter {
-                font-size: 50px;
-                color: #ff4747;
-                font-family: 'Poppins';
-                font-weight: 600;
-            }
-            >.nameLetters {
+            @include allCenter(center, baseline);
+            position: relative;
+            >span {
                 font-size: 50px;
                 color: whitesmoke;
                 font-family: 'Poppins';
                 font-weight: 600;
             }
-            >div {
-                @include allCenter(center, baseline);
-                position: relative;
-                >span {
-                    font-size: 50px;
-                    color: whitesmoke;
-                    font-family: 'Poppins';
-                    font-weight: 600;
-                }
-                >img {
-                    width: 24px;
-                    height: 26px;
-                    left: 4px;
-                    position: absolute;
-                    bottom: 20px;
-                }
+            >img {
+                width: 24px;
+                height: 26px;
+                left: 4px;
+                position: absolute;
+                bottom: 20px;
             }
         }
+    }
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        cursor: pointer;
+    }
+}
+
+
+.footerMiddle {
+    font-family: 'Poppins';
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: whitesmoke;
+}
+
+
+.footerRight {
+    @include allCenter();
+    gap: 40px;
+    >.referenceIcons {
+        transition: all 125ms ease-in-out;
+        width: 42px;
+        height: 40px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
+.gitIcon {
+    background-image: url('./../../../assets/img/gitDefault.png');
+    &:hover {
+        background-image: url('/assets/img/gitHover.png');
+    }
+}
+.mailIcon {
+    background-image: url('/assets/img/mailDefault.png');
+    &:hover {
+        background-image: url('/assets/img/mailHover.png');
+    }
+}
+.linkedIcon {
+    background-image: url('/assets/img/linkedDefault.png');
+    &:hover {
+        background-image: url('/assets/img/linkedHover.png');
     }
 }
