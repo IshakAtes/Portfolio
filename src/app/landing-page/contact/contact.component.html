@@ -11,8 +11,9 @@
         </div>
         <div class="formCt">
             <form action="" method="post">
-                <input placeholder="Your name" type="text">
-                <input placeholder="Your email" type="text">
+                <input
+                id="nameId" placeholder="Your name" type="text" required>
+                <input placeholder="Your email" type="text" required>
                 <textarea placeholder="Your message" name="" id="" cols="30" rows="10"></textarea>
                 <div>
                     <label class="container">
@@ -22,7 +23,7 @@
                     <p>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.</p>
                 </div>
                 <div class="btnContainer">
-                    <button>Send message</button>
+                    <button id="messageBtn" class="disabledBtn" disabled>Send message</button>
                 </div>
             </form>
             <div class="fastUp">

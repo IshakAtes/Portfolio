@@ -103,16 +103,22 @@ form {
         border: 1px solid #ff4747;
         gap: 10px;
         background-color: #141D2F;
-        font-family: 'Poppins';
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0em;
-        text-align: left;
-        color:whitesmoke;
+        &::placeholder {
+            font-family: 'Poppins';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color:whitesmoke;
+        }
         &:hover {
             border: 1px solid #FA7902;
             cursor: pointer;
+        }
+        &:focus {
+            outline: none !important;
+            border: 1px solid #FA7902;
         }
     }
     >textarea {
@@ -122,16 +128,22 @@ form {
         border: 1px solid #ff4747;
         gap: 10px;
         background-color: #141D2F;
-        font-family: 'Poppins';
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0em;
-        text-align: left;
-        text-decoration-color: whitesmoke;
+        &::placeholder {
+            font-family: 'Poppins';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: whitesmoke;
+        }
         &:hover {
             border: 1px solid #FA7902;
             cursor: pointer;
+        }
+        &:focus {
+            outline: none !important;
+            border: 1px solid #FA7902;
         }
         &::-webkit-resizer {
             content: '';
@@ -158,22 +170,24 @@ form {
     >.btnContainer {
         @include allCenter();
         width: 100%;
-        >button {
-            border: 0;
-            padding: 15px 30px 15px 30px;
-            border-radius: 10px;
-            gap: 10px;
-            background-color: #B6B6B6;
-            font-family: 'Poppins';
-            font-size: 23px;
-            font-weight: 400;
-            line-height: 28px;
-            letter-spacing: 0em;
-            color:whitesmoke;
-        }
     }
 }
 
+
+.disabledBtn {
+    border: 0;
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: #B6B6B6;
+    font-family: 'Poppins';
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color:whitesmoke;
+    cursor: default;
+}
 
 
 
@@ -195,7 +209,6 @@ form {
     -ms-user-select: none;
     user-select: none;
 }
-
   /* Hide the browser's default checkbox */
 .container input {
     position: absolute;
@@ -204,7 +217,6 @@ form {
     height: 0;
     width: 0;
 }
-
   /* Create a custom checkbox */
 .checkmark {
     position: absolute;
@@ -216,29 +228,24 @@ form {
     border: 2px solid #FA7902;
     border-radius: 5px;
 }
-
 /* On mouse-over, add a grey background color */
 // .container:hover input ~ .checkmark {
 //     background-color: #141D2F;
 // }
-
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
     background-color: #141D2F;
 }
-
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
-
 /* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
     display: block;
 }
-
 /* Style the checkmark/indicator */
 .container .checkmark:after {
     left: 6px;
