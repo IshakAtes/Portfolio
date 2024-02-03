@@ -96,38 +96,6 @@ form {
     @include allCenter(center, flex-start);
     gap: 20px;
     flex-direction: column;
-    >input {
-        width: 617px;
-        padding: 15px 25px 15px 25px;
-        border-radius: 10px;
-        border: 1px solid #ff4747;
-        gap: 10px;
-        background-color: #141D2F;
-        font-family: 'Poppins';
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19px;
-        letter-spacing: 0em;
-        text-align: left;
-        color:whitesmoke;
-        &::placeholder {
-            font-family: 'Poppins';
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 19px;
-            letter-spacing: 0em;
-            text-align: left;
-            color:whitesmoke;
-        }
-        &:hover {
-            border: 1px solid #D61CE6;
-            cursor: pointer;
-        }
-        &:focus {
-            outline: none !important;
-            border: 1px solid #FA7902;
-        }
-    }
     >textarea {
         width: 617px;
         padding: 15px 25px 15px 25px;
@@ -189,6 +157,42 @@ form {
     >.btnContainer {
         @include allCenter();
         width: 100%;
+    }
+}
+
+.inputContainer {
+    position: relative;
+    >input {
+        width: 617px;
+        padding: 15px 25px 15px 25px;
+        border-radius: 10px;
+        border: 1px solid #ff4747;
+        gap: 10px;
+        background-color: #141D2F;
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:whitesmoke;
+        &::placeholder {
+            font-family: 'Poppins';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color:whitesmoke;
+        }
+        &:hover {
+            border: 1px solid #D61CE6;
+            cursor: pointer;
+        }
+        &:focus {
+            outline: none !important;
+            border: 1px solid #FA7902;
+        }
     }
 }
 

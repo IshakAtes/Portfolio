@@ -11,15 +11,40 @@
         </div>
         <div class="formCt">
             <form action="" method="post">
-                <input
-                name="nameId" minlength="2" placeholder="Your name" type="text" required
-                [(ngModel)]="nameInput"
-                [ngClass]="{'green-border': nameInput.length >= 2}"
-                >
-                <img *ngIf="nameInput.length < 2" src="/assets/img/warning.png" alt="First Image" />
-                <img *ngIf="nameInput.length >= 2" src="/assets/img/success.png" alt="Second Image" />
-                
-                <input placeholder="Your email" type="text" required>
+                <div class="inputContainer">
+                    <input
+                    class="form-control"
+                    name="nameId" minlength="2" placeholder="Your name" type="text" required
+                    [(ngModel)]="nameInput"
+                    [ngClass]="{'green-border': nameInput.length >= 2}"
+                    >
+                    <img *ngIf="nameInput.length < 2"
+                    [ngStyle]="{'position': 'absolute', 'right': '14px'}"
+                    src="/assets/img/warning.png" alt="First Image"
+                    >
+                    <img *ngIf="nameInput.length >= 2"
+                    [ngStyle]="{'position': 'absolute', 'right': '14px'}"
+                    src="/assets/img/success.png" alt="Second Image"
+                    >
+                </div>
+
+                <div class="inputContainer">
+                    <input
+                    [(ngModel)]="mailInput"
+                    class="form-control"
+                    name="email" minlength="2" type="email" placeholder="Your email" required
+                    [pattern]="pattern"
+                />
+                <img *ngIf="!mailInput.match(pattern)"
+                    [ngStyle]="{'position': 'absolute', 'right': '14px'}"
+                    src="/assets/img/warning.png" alt="First Image"
+                />
+                <img *ngIf="mailInput.length >= 2 && mailInput.match(pattern)"
+                    [ngStyle]="{'position': 'absolute', 'right': '14px'}"
+                    src="/assets/img/success.png" alt="Second Image"
+                />
+                </div>
+
                 <textarea placeholder="Your message" name="" id="" cols="30" rows="10"></textarea>
                 <div>
                     <label class="container">
