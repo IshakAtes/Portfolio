@@ -12,7 +12,13 @@
         <div class="formCt">
             <form action="" method="post">
                 <input
-                id="nameId" placeholder="Your name" type="text" required>
+                name="nameId" minlength="2" placeholder="Your name" type="text" required
+                [(ngModel)]="nameInput"
+                [ngClass]="{'green-border': nameInput.length >= 2}"
+                >
+                <img *ngIf="nameInput.length < 2" src="/assets/img/warning.png" alt="First Image" />
+                <img *ngIf="nameInput.length >= 2" src="/assets/img/success.png" alt="Second Image" />
+                
                 <input placeholder="Your email" type="text" required>
                 <textarea placeholder="Your message" name="" id="" cols="30" rows="10"></textarea>
                 <div>
