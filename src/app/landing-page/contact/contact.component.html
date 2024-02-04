@@ -18,12 +18,13 @@
                     [(ngModel)]="nameInput"
                     [ngClass]="{'green-border': nameInput.length >= 2}"
                     >
+                    <span [ngClass]="{'d-none': nameInput.length >= 2}">Your name is required</span>
                     <img *ngIf="nameInput.length < 2"
-                    [ngStyle]="{'position': 'absolute', 'right': '14px'}"
+                    [ngStyle]="{'position': 'absolute', 'right': '14px', 'top': '12px'}"
                     src="/assets/img/warning.png" alt="First Image"
                     >
                     <img *ngIf="nameInput.length >= 2"
-                    [ngStyle]="{'position': 'absolute', 'right': '14px'}"
+                    [ngStyle]="{'position': 'absolute', 'right': '14px', 'top': '12px'}"
                     src="/assets/img/success.png" alt="Second Image"
                     >
                 </div>
@@ -34,19 +35,37 @@
                     class="form-control"
                     name="email" minlength="2" type="email" placeholder="Your email" required
                     [pattern]="pattern"
-                />
-                <img *ngIf="!mailInput.match(pattern)"
-                    [ngStyle]="{'position': 'absolute', 'right': '14px'}"
-                    src="/assets/img/warning.png" alt="First Image"
-                />
-                <img *ngIf="mailInput.length >= 2 && mailInput.match(pattern)"
-                    [ngStyle]="{'position': 'absolute', 'right': '14px'}"
-                    src="/assets/img/success.png" alt="Second Image"
-                />
+                    [ngClass]="{'green-border': mailInput.match(pattern)}"
+                    />
+                    <span [ngClass]="{'d-none': mailInput.match(pattern)}">Your email is required</span>
+                    <img *ngIf="!mailInput.match(pattern)"
+                        [ngStyle]="{'position': 'absolute', 'right': '14px', 'top': '12px'}"
+                        src="/assets/img/warning.png" alt="First Image"
+                    />
+                    <img *ngIf="mailInput.length >= 2 && mailInput.match(pattern)"
+                        [ngStyle]="{'position': 'absolute', 'right': '14px', 'top': '12px'}"
+                        src="/assets/img/success.png" alt="Second Image"
+                    />
                 </div>
 
-                <textarea placeholder="Your message" name="" id="" cols="30" rows="10"></textarea>
-                <div>
+                <div class="textContainer">
+                    <textarea name="email" minlength="2" placeholder="Your message" name="text" id="" cols="30" rows="10"
+                    [(ngModel)]="textInput"
+                    [ngClass]="{'green-border-resizer': textInput.length >= 6}"
+                    >
+                    </textarea>
+                    <span [ngClass]="{'d-none': textInput.length >= 6}">Your message is empty</span>
+                    <img *ngIf="textInput.length < 6"
+                    [ngStyle]="{'position': 'absolute', 'right': '14px', 'top': '14px'}"
+                    src="/assets/img/warning.png" alt="First Image"
+                    >
+                    <img *ngIf="textInput.length >= 6"
+                    [ngStyle]="{'position': 'absolute', 'right': '14px', 'top': '14px'}"
+                    src="/assets/img/success.png" alt="Second Image"
+                    >
+                </div>
+
+                <div class="privacyCheckbox">
                     <label class="container">
                         <input required type="checkbox">
                         <span class="checkmark"></span>

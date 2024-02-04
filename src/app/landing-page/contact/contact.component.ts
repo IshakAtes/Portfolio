@@ -11,6 +11,7 @@ import { FormsModule, NgModel, ReactiveFormsModule } from '@angular/forms';
 })
 export class ContactComponent {
   nameInput: string = '';
+  textInput: string = '';
   minlength: number = 2;
   isButtonDisabled: boolean = true;
   mailInput: string = '';

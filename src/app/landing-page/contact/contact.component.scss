@@ -96,6 +96,80 @@ form {
     @include allCenter(center, flex-start);
     gap: 20px;
     flex-direction: column;
+    >div {
+        @include allCenter(flex-start, center);
+        >p {
+            font-family: 'Poppins';
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: whitesmoke;
+            >a {
+                text-decoration: none;
+                color:#ff4747;
+            }
+        }
+    }
+    >.btnContainer {
+        @include allCenter();
+        width: 100%;
+    }
+}
+
+.inputContainer {
+    position: relative;
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    >input {
+        width: 617px;
+        padding: 15px 25px 15px 25px;
+        border-radius: 10px;
+        border: 1px solid #ff4747;
+        gap: 10px;
+        background-color: #141D2F;
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color:whitesmoke;
+        &::placeholder {
+            font-family: 'Poppins';
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color:whitesmoke;
+        }
+        &:hover {
+            border: 1px solid #D61CE6;
+            cursor: pointer;
+        }
+        &:focus {
+            outline: none !important;
+            border: 1px solid #FA7902;
+        }
+    }
+    >span {
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #E61C40;
+        padding-top: 2px;
+    }
+}
+
+.textContainer {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start !important;
     >textarea {
         width: 617px;
         padding: 15px 25px 15px 25px;
@@ -138,64 +212,17 @@ form {
             background-repeat: no-repeat;
         }
     }
-    >div {
-        @include allCenter(flex-start, center);
-        >p {
-            font-family: 'Poppins';
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 17px;
-            letter-spacing: 0em;
-            text-align: left;
-            color: whitesmoke;
-            >a {
-                text-decoration: none;
-                color:#ff4747;
-            }
-        }
-    }
-    >.btnContainer {
-        @include allCenter();
-        width: 100%;
-    }
-}
-
-.inputContainer {
-    position: relative;
-    >input {
-        width: 617px;
-        padding: 15px 25px 15px 25px;
-        border-radius: 10px;
-        border: 1px solid #ff4747;
-        gap: 10px;
-        background-color: #141D2F;
+    >span {
         font-family: 'Poppins';
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
-        line-height: 19px;
+        line-height: 17px;
         letter-spacing: 0em;
         text-align: left;
-        color:whitesmoke;
-        &::placeholder {
-            font-family: 'Poppins';
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 19px;
-            letter-spacing: 0em;
-            text-align: left;
-            color:whitesmoke;
-        }
-        &:hover {
-            border: 1px solid #D61CE6;
-            cursor: pointer;
-        }
-        &:focus {
-            outline: none !important;
-            border: 1px solid #FA7902;
-        }
+        color: #E61C40;
+        padding-top: 2px;
     }
 }
-
 
 .disabledBtn {
     border: 0;
@@ -216,6 +243,18 @@ form {
     border: 1px solid #70E61C !important;
 }
 
+.green-border-resizer {
+    border: 1px solid #70E61C !important;
+    &::-webkit-resizer {
+        content: '';
+        background-image: url('/assets/img/resizerGreen.png') !important;
+        background-repeat: no-repeat;
+    }
+}
+
+.d-none {
+    display: none;
+}
 
 
 
