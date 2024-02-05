@@ -1,6 +1,7 @@
 import { NgClass, NgIf, NgStyle } from '@angular/common';
-import { Component, Input } from '@angular/core';
-import { FormsModule, NgModel, ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
+import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup, Validators, } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -10,16 +11,21 @@ import { FormsModule, NgModel, ReactiveFormsModule, FormBuilder, FormGroup, Vali
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  http = inject(HttpClient);
   myForm: FormGroup;
-  textInput: string = '';
   minlength: number = 2;
   isButtonDisabled: boolean = true;
+  contactData = {
+    name: '',
+    mail: '',
+    message: '',
+  }
 
   constructor(private fb: FormBuilder) {
     this.myForm = this.fb.group({
-      nameInput: ['', [Validators.required, Validators.minLength(2)]],
-      mailInput: ['', [Validators.required, Validators.email]],
-      text: ['', [Validators.required, Validators.minLength(6)]],
+      name: ['', [Validators.required, Validators.minLength(2)]],
+      mail: ['', [Validators.required, Validators.email]],
+      message: ['', [Validators.required, Validators.minLength(6)]],
       checkbox: [false, Validators.requiredTrue]
     });
   }
@@ -28,8 +34,34 @@ export class ContactComponent {
     return this.myForm.valid;
   }
 
+
+
+  post = {
+    endPoint: 'https://ishakates.com/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
   onSubmit() {
-    console.log('form works')
+    if (this.myForm.valid) {
+      console.log(this.myForm.value);
+      this.http.post(this.post.endPoint, this.post.body(this.myForm.value))
+        .subscribe({
+          next: (response: any) => {
+
+            this.myForm.reset();
+          },
+          error: (error: any) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    }
   }
 
 }
