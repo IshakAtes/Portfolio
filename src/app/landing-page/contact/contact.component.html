@@ -20,7 +20,6 @@
                         type="text"
                         required
                         formControlName="name"
-                        [(ngModel)]="contactData.name"
                         [ngClass]="{'green-border': myForm.get('name')?.valid, 'red-border': myForm.get('name')?.invalid && myForm.get('name')?.touched}"
                     />
                     <span [ngClass]="{'d-none': myForm.get('name')?.valid || !myForm.get('name')?.touched}">Your name is required</span>
@@ -47,7 +46,6 @@
                         placeholder="Your email"
                         required
                         formControlName="mail"
-                        [(ngModel)]="contactData.mail"
                         [ngClass]="{'green-border': myForm.get('mail')?.valid, 'red-border': myForm.get('mail')?.invalid && myForm.get('mail')?.touched}"
                     />
                     <span [ngClass]="{'d-none': myForm.get('mail')?.valid || !myForm.get('mail')?.touched}">Your email is required</span>
@@ -74,7 +72,6 @@
                         cols="30"
                         rows="10"
                         formControlName="message"
-                        [(ngModel)]="contactData.message"
                         [ngClass]="{'green-border-resizer': myForm.get('message')?.valid, 'red-border': myForm.get('message')?.invalid && myForm.get('message')?.touched}"
                     ></textarea>
                     <span [ngClass]="{'d-none': myForm.get('message')?.valid || !myForm.get('message')?.touched}">Your message is empty</span>

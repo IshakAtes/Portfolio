@@ -15,11 +15,7 @@ export class ContactComponent {
   myForm: FormGroup;
   minlength: number = 2;
   isButtonDisabled: boolean = true;
-  contactData = {
-    name: '',
-    mail: '',
-    message: '',
-  }
+
 
   constructor(private fb: FormBuilder) {
     this.myForm = this.fb.group({
@@ -52,7 +48,7 @@ export class ContactComponent {
       console.log(this.myForm.value);
       this.http.post(this.post.endPoint, this.post.body(this.myForm.value))
         .subscribe({
-          next: (response: any) => {
+          next: (_response: any) => {
 
             this.myForm.reset();
           },
