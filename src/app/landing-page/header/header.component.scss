@@ -17,23 +17,28 @@ header {
 
 .textMain {
     z-index: 4;
-    padding-top: 60px;
+    padding-top: 200px;
     padding-right: 300px;
     @include allCenter();
     flex-direction: column;
-    >button {
-        // padding: 15px 30px 15px 30px;
+    >a {
+        @include allCenter();
+        text-decoration: none;
         gap: 10;
         margin-top: 24px;
-        width: 165px;
-        height: 58px;
+        padding: 15px 30px 15px 30px;
         border-radius: 10px;
         background-color: #FA7902;
         font-size: 23px;
         color: whitesmoke;
         font-family: 'Poppins';
         cursor: pointer;
-        border: 0
+        border: 0;
+        transition: all 125ms ease-in-out;
+        &:hover {
+            padding: 20px 40px 20px 40px;
+            background-color: #FF4747;
+        }
     }
 }
 
@@ -94,8 +99,8 @@ header {
 .spreads {
     z-index: 1;
     position: absolute;
-    left: -90px;
-    top: 30px;
+    left: -99px;
+    top: 70px;
     width: 1000px;
 }
 
@@ -104,7 +109,7 @@ header {
     @include allCenter();
     gap: 40px;
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
     z-index: 3;
     height: 40px;
     >.lineStyle {
@@ -152,7 +157,8 @@ header {
             width: 0px;
             height: 3px;
             display: block;
-            background: whitesmoke;
+            background: #FF4747;
+            color:#FA7902;
             transition: 300ms;
         }
         &:hover::after {

@@ -3,22 +3,71 @@
 nav {
     @include allCenter(space-between, center);
     background-color: #141D2F;
-    width: Fixed (1,440px);
     // height: Hug (109.03px);
-    padding: 20px 100px 20px 100px;
-    >div {
+    padding: 10px 100px 10px 100px;
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    left: 0;
+    >.nameContainer {
+        @include allCenter();
+        >.firstLetter {
+            font-size: 50px;
+            color: #ff4747;
+            font-family: 'Poppins';
+            font-weight: 600;
+        }
+        >.nameLetters {
+            font-size: 50px;
+            color: whitesmoke;
+            font-family: 'Poppins';
+            font-weight: 600;
+            position: relative;
+            z-index: 5;
+        }
+        >div {
+            @include allCenter(center, baseline);
+            position: relative;
+            >span {
+                font-size: 50px;
+                color: whitesmoke;
+                font-family: 'Poppins';
+                font-weight: 600;
+            }
+            >img {
+                width: 24px;
+                height: 26px;
+                left: 4px;
+                position: absolute;
+                bottom: 20px;
+            }
+        }
+    }
+    >.linkContainer {
         @include allCenter();
         flex-direction: row;
         gap: 30px;
         width: 660px;
         height: 32px;
         >a {
+            transition: all 125ms ease-in-out;
             text-decoration: none;
             font-size: 32px;
             color: whitesmoke;
             padding-left: 40px;
+            &::after {
+                content: '';
+                width: 0px;
+                height: 3px;
+                display: block;
+                background: #ff4747;
+                transition: 300ms;
+            }
+            &:hover::after {
+                width: 70%;
+            }
             &:hover {
-                color: #f87800;
+                color: #FA7902;
             }
         }
     }
@@ -32,6 +81,20 @@ nav {
         color: whitesmoke;
         margin-right: 10px;
         margin-left: 10px;
+        &::after {
+            content: '';
+            width: 0px;
+            height: 3px;
+            display: block;
+            background: #ff4747;
+            transition: 300ms;
+        }
+        &:hover::after {
+            width: 70%;
+        }
+        &:hover {
+            color: #FA7902;
+        }
     }
     >span {
         color: rgb(180, 180, 180);

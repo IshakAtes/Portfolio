@@ -31,7 +31,6 @@ export class ContactComponent {
   }
 
 
-
   post = {
     endPoint: 'https://ishakates.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -45,7 +44,6 @@ export class ContactComponent {
 
   onSubmit() {
     if (this.myForm.valid) {
-      console.log(this.myForm.value);
       this.http.post(this.post.endPoint, this.post.body(this.myForm.value))
         .subscribe({
           next: (_response: any) => {

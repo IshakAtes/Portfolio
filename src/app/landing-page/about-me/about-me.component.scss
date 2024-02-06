@@ -3,6 +3,7 @@
 .aboutMeContainer {
     position: relative;
     background-color: #141D2F;
+    padding-top: 140px;
     @include allCenter(space-around, center);
     
     >img {
