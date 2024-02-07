@@ -25,29 +25,36 @@ export class PortfolioProjectsComponent {
     project: string | number;
     lang: string;
     description: string;
+    live: string;
+    git: string;
   }[] = [{
       "id": 1,
       "img": "/assets/img/Join.png",
       "project": "Join",
       "lang": "HTML | CSS | Javascript",
-      "description": "lorem Ipsum"
+      "description": "lorem Ipsum",
+      "live": "https://ishakates.com/Join/index.html",
+      "git": "https://github.com/IshakAtes/Join.git",
     },
     {
       "id": 2,
       "img": "/assets/img/sharkie_mockup.png",
       "project": "Sharkie",
       "lang": "HTML | CSS | Javascript",
-      "description": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale."
+      "description": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
+      "live": "https://ishakates.com/sharkie/index.html",
+      "git": "https://github.com/IshakAtes/sharkie.git",
     },
     {
       "id": 3,
       "img": "/assets/img/Pkedex.png",
       "project": "Pokedex",
       "lang": "HTML | CSS | Javascript | API",
-      "description": "lorem Ipsum"
+      "description": "lorem Ipsum",
+      "live": "https://ishakates.com/Pokedex/index.html",
+      "git": "https://github.com/IshakAtes/Pokedex.git",
     },
   ];
-  
 
   ngOnInit() {
   }

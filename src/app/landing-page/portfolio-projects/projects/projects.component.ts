@@ -13,6 +13,8 @@ export class ProjectsComponent {
   @Input() framework: string = '';
   @Input() imgUrl: string = '';
   @Input() content: string = '';
+  @Input() liveTest: string = '';
+  @Input() gitLink: string = '';
   @Input() i: number = 0;
 
   constructor() {
