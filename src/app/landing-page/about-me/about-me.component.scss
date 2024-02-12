@@ -78,9 +78,10 @@
     height: 500px;
     background-image: url('/assets/img/smallPhoto.png');
     object-fit: cover;
-    background-position: center;
+    background-position: 0px -26px;
     background-size: cover;
     position: relative;
+    background-repeat: no-repeat;
     >div {
         width: 300px;
         border: 2px solid #FA7902;
