@@ -12,6 +12,8 @@
 
 
 .footerLeft {
+    @include allCenter(center, flex-start);
+    flex-direction: column;
     >div {
         @include allCenter();
         >.firstLetter {
@@ -44,7 +46,7 @@
             }
         }
     }
-    a {
+    >span {
         text-decoration: none;
         color: whitesmoke;
         font-family: 'Poppins';
@@ -54,6 +56,10 @@
         letter-spacing: 0em;
         text-align: left;
         cursor: pointer;
+        margin-bottom: 4px;
+        &:hover {
+            color: #ff4747;
+        }
     }
 }
 

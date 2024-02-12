@@ -2,11 +2,12 @@ import { NgClass, NgIf, NgStyle } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup, Validators, } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [NgClass, FormsModule, ReactiveFormsModule, NgIf, NgStyle,],
+  imports: [NgClass, FormsModule, ReactiveFormsModule, NgIf, NgStyle],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -17,13 +18,17 @@ export class ContactComponent {
   isButtonDisabled: boolean = true;
 
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private router: Router) {
     this.myForm = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(2)]],
       mail: ['', [Validators.required, Validators.email]],
       message: ['', [Validators.required, Validators.minLength(6)]],
       checkbox: [false, Validators.requiredTrue]
     });
+  }
+
+  openPolicy() {
+    this.router.navigateByUrl('/policys');
   }
 
   isFormValid(): boolean {

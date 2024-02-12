@@ -1,0 +1,16 @@
+@import './../../styles.scss';
+
+.privacy {
+    @include allCenter(center, center);
+    flex-direction: column;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+    color: whitesmoke;
+    h1 {
+        color: #FF4747;
+    }
+    a {
+        color: #FA7902;
+    }
+}

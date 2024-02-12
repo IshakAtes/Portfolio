@@ -106,7 +106,8 @@ form {
             letter-spacing: 0em;
             text-align: left;
             color: whitesmoke;
-            >a {
+            >span {
+                cursor: pointer;
                 text-decoration: none;
                 color:#ff4747;
             }
