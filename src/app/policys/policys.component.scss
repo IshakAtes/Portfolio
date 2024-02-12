@@ -7,6 +7,19 @@
     padding-right: 200px;
     text-align: center;
     color: whitesmoke;
+    >.closeImg {
+        position: fixed;
+        top: 30px;
+        right: 200px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        opacity: 0.6;
+        background-image: url(./../../assets/img/buchstabe-x.png);
+        &:hover {
+            background-image: url(./../../assets/img/buchstabe-x\ \(1\).png);
+        }
+    }
     h1 {
         color: #FF4747;
     }

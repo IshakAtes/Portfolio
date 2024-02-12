@@ -7,5 +7,5 @@ export const routes: Routes = [
     { path: '', component: LandingPageComponent },
     { path: 'policys', component: PolicysComponent },
     { path: 'imprint', component: ImprintComponent },
-    // { path: '**', redirectTo: '' },
+    { path: '**', redirectTo: '' },
 ];
