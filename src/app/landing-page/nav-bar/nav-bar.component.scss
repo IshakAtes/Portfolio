@@ -1,48 +1,17 @@
 @import './../../../styles.scss';
 
-nav {
+.navMobile {
+    display: none;
+}
+
+.navDefault {
     @include allCenter(space-between, center);
     background-color: #141D2F;
-    // height: Hug (109.03px);
     padding: 10px 100px 10px 100px;
     position: fixed;
     z-index: 5;
     right: 0;
     left: 0;
-    >.nameContainer {
-        @include allCenter();
-        >.firstLetter {
-            font-size: 50px;
-            color: #ff4747;
-            font-family: 'Poppins';
-            font-weight: 600;
-        }
-        >.nameLetters {
-            font-size: 50px;
-            color: whitesmoke;
-            font-family: 'Poppins';
-            font-weight: 600;
-            position: relative;
-            z-index: 5;
-        }
-        >div {
-            @include allCenter(center, baseline);
-            position: relative;
-            >span {
-                font-size: 50px;
-                color: whitesmoke;
-                font-family: 'Poppins';
-                font-weight: 600;
-            }
-            >img {
-                width: 24px;
-                height: 26px;
-                left: 4px;
-                position: absolute;
-                bottom: 20px;
-            }
-        }
-    }
     >.linkContainer {
         @include allCenter();
         flex-direction: row;
@@ -73,6 +42,41 @@ nav {
     }
 }
 
+.nameContainer {
+    @include allCenter();
+    >.firstLetter {
+        font-size: 50px;
+        color: #ff4747;
+        font-family: 'Poppins';
+        font-weight: 600;
+    }
+    >.nameLetters {
+        font-size: 50px;
+        color: whitesmoke;
+        font-family: 'Poppins';
+        font-weight: 600;
+        position: relative;
+        z-index: 5;
+    }
+    >div {
+        @include allCenter(center, baseline);
+        position: relative;
+        >span {
+            font-size: 50px;
+            color: whitesmoke;
+            font-family: 'Poppins';
+            font-weight: 600;
+        }
+        >img {
+            width: 24px;
+            height: 26px;
+            left: 4px;
+            position: absolute;
+            bottom: 20px;
+        }
+    }
+}
+
 .langCt {
     @include allCenter();
     >a {
@@ -99,5 +103,26 @@ nav {
     >span {
         color: rgb(180, 180, 180);
         font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .burgerCt {
+        cursor: pointer;
+    }
+    
+    .navDefault {
+        display: none;
+    }
+
+    .navMobile {
+        @include allCenter(space-between, center);
+        background-color: #141D2F;
+        padding: 10px 40px 10px 40px;
+        position: fixed;
+        z-index: 5;
+        right: 0;
+        left: 0;
     }
 }
