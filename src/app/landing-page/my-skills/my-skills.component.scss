@@ -20,13 +20,15 @@
         z-index: 2;
         @include allCenter(flex-start, center);
         flex-wrap: wrap;
-        gap: 100px;
+        gap: 50px;
         >div {
             @include allCenter();
             flex-direction: column;
             height: 100px;
+            width: 90px;
             gap: 10px;
             >span {
+                text-align: center;
                 font-size: 16px;
                 font-family: 'poppins';
                 color: whitesmoke;
@@ -87,5 +89,71 @@
             padding: 20px 40px 20px 40px;
             background-color: #FF4747;
         }
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .mainSkillCt {
+        padding-left: 100px;
+        padding-right: 100px;
+        justify-content: space-evenly;
+    }
+
+    .mainSkillCt > .skillIconCt {
+        gap: 54px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .skillContentCt > div > h2 {
+        width: max-content;
+    }
+    .skillContentCt {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .skillContentCt > div .decentLine {
+        width: 40px;
+    }
+
+    .skillContentCt {
+        margin-left: 0px;
+    }
+
+    .mainSkillCt {
+        flex-direction: column-reverse;
+    }
+
+    .mainSkillCt {
+        padding-top: 200px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .mainSkillCt > .skillIconCt {
+        gap: 40px;
+        margin-top: 100px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skillContentCt > div > h2 {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 54px;
+        letter-spacing: 0em;
+        text-align: right;
+    }
+
+    .skillContentCt > span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: right;
     }
 }

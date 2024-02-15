@@ -4,13 +4,14 @@
     position: relative;
     background-color: #141D2F;
     padding-top: 140px;
-    @include allCenter(space-around, center);
-    
+    @include allCenter(space-evenly, center);
+    padding-left: 40px;
+    padding-right: 40px;
     >img {
         z-index: 3;
         right: -450px;
         position: absolute;
-        top: -330px;
+        top: -100px;
     }
     >.aboutMeContent {
         @include allCenter(center, flex-start);
@@ -90,4 +91,57 @@
         left: 100%;
         top: 50%;
     }
+}
+
+
+@media screen and (max-width: 1300px) {
+    .aboutMeContainer > .aboutMeContent {
+        width: 480px;
+    }
+
+    .aboutMeImageCt {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .aboutMeContainer {
+        flex-direction: column;
+    }
+
+    .aboutMeImageCt {
+        display: none;
+    }
+
+    .aboutMeContainer > .aboutMeContent {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aboutMeContainer {
+        flex-direction: column;
+    }
+
+    .aboutMeImageCt {
+        display: none;
+    }
+
+    .aboutMeContainer > .aboutMeContent > h2 {
+    font-size: 45px;
+    line-height: 54px;
+    }
+
+    .aboutMeContainer > .aboutMeContent .myContent > span {
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .aboutMeContainer > .aboutMeContent .myContent > div > p {
+        font-weight: 400;
+        line-height: 19px;
+    }
+
 }
