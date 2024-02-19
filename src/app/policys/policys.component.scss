@@ -17,7 +17,8 @@
         opacity: 0.6;
         background-image: url(./../../assets/img/buchstabe-x.png);
         &:hover {
-            background-image: url(./../../assets/img/buchstabe-x\ \(1\).png);
+            opacity: 1;
+            background-image: url(./../../assets/img/bstabe-x.png);
         }
     }
     h1 {
