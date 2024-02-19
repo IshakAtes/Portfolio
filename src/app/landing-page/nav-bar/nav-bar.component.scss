@@ -193,9 +193,14 @@
     background-color: whitesmoke;
     margin: 6px 0;
     transition: 0.4s;
+    border-radius: 50px;
     &:hover {
         background-color: #FA7902;
     }
+}
+
+.bar2 {
+    background-color: #ff4747;
 }
 
 .change .bar1 {
