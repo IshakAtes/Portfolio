@@ -61,6 +61,7 @@
             font-size: 90px;
             font-family: 'poppins';
             color:whitesmoke;
+            width: max-content;
         }
     }
     >span {
@@ -103,12 +104,13 @@
     .mainSkillCt > .skillIconCt {
         gap: 54px;
     }
-}
 
-@media screen and (max-width: 1400px) {
     .skillContentCt > div > h2 {
         width: max-content;
     }
+}
+
+@media screen and (max-width: 1400px) {
     .skillContentCt {
         margin-left: 50px;
     }
@@ -137,6 +139,12 @@
         gap: 40px;
         margin-top: 100px;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .skillContentCt > div > h2 {
+        margin-right: 30px;
     }
 }
 
