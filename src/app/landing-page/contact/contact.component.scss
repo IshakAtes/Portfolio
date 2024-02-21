@@ -2,6 +2,8 @@
 
 .contactsMainCt {
     background-color: #141D2F;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 .contactsHeadCt {
@@ -27,8 +29,6 @@
 
 .contactCt {
     @include allCenter(space-between, flex-start);
-    margin-left: 100px;
-    margin-right: 100px;
     position: relative;
     >.announcementCt {
         @include allCenter(center, flex-start);
@@ -305,11 +305,6 @@ form {
 }
 
 
-
-
-
-
-
 // CUSTOM CHECKBOX
 .container {
     display: block;
@@ -371,4 +366,28 @@ form {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+
+@media screen and (max-width: 1400px) {
+    .contactCt > .announcementCt > p {
+        width: inherit;
+    }
+
+    form > div {
+        max-width: 620px !important;
+    }
+
+    .textContainer > textarea {
+        width: unset;
+        max-width: 620px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .contactsHeadCt > h2 {
+        font-size: 45px;
+        line-height: 54px;
+    }
 }

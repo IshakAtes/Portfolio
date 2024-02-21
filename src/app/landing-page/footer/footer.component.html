@@ -11,7 +11,19 @@
         <span (click)="openImprint()">Imprint</span>
         <span (click)="openPolicy()">Privacy Policy</span>
     </div>
-    <div class="footerMiddle">© Ishak Ates 2024</div>
+    <div class="footerMiddle">
+        <div class="hero-container">
+            <div class="environment"></div>
+            <h2
+            [ngClass]="{'glitch': mouseOvered, 'layers': mouseOvered}"
+            (mouseenter)="mouseOvered = true"
+            (mouseleave)="mouseOvered = false"
+            class="hero"
+            data-text="近設計近設計近設計">
+                <span>© Ishak Ates 2024</span>
+            </h2>
+        </div>
+    </div>
     <div class="footerRight">
         <a href="https://github.com/IshakAtes" target="_blank" class="gitIcon referenceIcons"></a>
         <a href="mailto:ishakfeuer@gmail.com?subject=Feedback Portfolio&body=Hallo, ich möchte Ihnen folgendes Feedback geben:" class="mailIcon referenceIcons"></a>
