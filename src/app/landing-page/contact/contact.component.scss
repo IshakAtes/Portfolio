@@ -1,9 +1,11 @@
 @import './../../../styles.scss';
 
+* {
+    box-sizing: border-box;
+}
+
 .contactsMainCt {
     background-color: #141D2F;
-    padding-right: 100px;
-    padding-left: 100px;
 }
 
 .contactsHeadCt {
@@ -30,6 +32,8 @@
 .contactCt {
     @include allCenter(space-between, flex-start);
     position: relative;
+    padding-right: 100px;
+    padding-left: 100px;
     >.announcementCt {
         @include allCenter(center, flex-start);
         flex-direction: column;
@@ -135,8 +139,10 @@ form {
     position: relative;
     align-items: flex-start !important;
     flex-direction: column !important;
+    width: 100%;
     >input {
-        width: 617px;
+        width: 100%;
+        max-width: 620px;
         padding: 15px 25px 15px 25px;
         border-radius: 10px;
         border: 1px solid #FF4747;
@@ -190,8 +196,10 @@ form {
     position: relative;
     flex-direction: column;
     align-items: flex-start !important;
+    width: 100%;
     >textarea {
-        width: 617px;
+        max-width: 620px;
+        width: 100%;
         padding: 15px 25px 15px 25px;
         border-radius: 10px;
         border: 1px solid #ff4747;
@@ -374,13 +382,38 @@ form {
         width: inherit;
     }
 
-    form > div {
-        max-width: 620px !important;
+    .contactCt {
+        gap: 40px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .contactCt > .announcementCt {
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .contactCt {
+        padding-right: 40px;
+        padding-left: 40px;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
     }
 
-    .textContainer > textarea {
-        width: unset;
-        max-width: 620px;
+    .contactCt > .announcementCt {
+        width: 100%;
+        align-items: center;
+        > p {
+            text-align: center;
+        }
+    }
+
+    .contactCt > img {
+        z-index: -1;
     }
 }
 
@@ -389,5 +422,15 @@ form {
     .contactsHeadCt > h2 {
         font-size: 45px;
         line-height: 54px;
+        margin-left: 20px
+    }
+
+    .contactCt > .announcementCt {
+        > span {
+            text-align: center;
+        }
+        > p {
+            text-align: center;
+        }
     }
 }
