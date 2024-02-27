@@ -8,7 +8,7 @@
         </div>
     </div>
     <div class="linkContainer">
-        <a href="#aboutMe">About me</a>
+        <a href="#aboutMe" i18n>About me</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
         <div class="langCt">
@@ -42,10 +42,10 @@
         <a href="#aboutMe">About me</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
-        <div class="langCt">
-            <a href="#">DE</a>
+        <div class="languageCt">
+            <button (click)="switchLanguage('de-CH')">DE</button>
             <span>|</span>
-            <a href="#">EN</a>
+            <button (click)="switchLanguage('en-US')">EN</button>
         </div>
     </div>
 </div>
