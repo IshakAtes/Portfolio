@@ -59,7 +59,5 @@ export class PortfolioProjectsComponent {
   ngOnInit() {
   }
 
-  constructor() {
-    console.log('project', this.allProjects[0]['project']);
-  }
+  constructor() {}
 }
