@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ProjectsComponent } from './projects/projects.component';
 import { NgFor } from '@angular/common';
 import { NgClass } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 // interface ProjectStructure {
 //   id: number;
@@ -13,7 +14,7 @@ import { NgClass } from '@angular/common';
 @Component({
   selector: 'app-portfolio-projects',
   standalone: true,
-  imports: [ProjectsComponent, NgFor, NgClass],
+  imports: [ProjectsComponent, NgFor, NgClass, TranslateModule],
   templateUrl: './portfolio-projects.component.html',
   styleUrl: './portfolio-projects.component.scss'
 })

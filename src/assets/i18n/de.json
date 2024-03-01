@@ -1,0 +1,23 @@
+{
+    "ABOUTME": "Über mich",
+    "YOURSELF": "In den Hallen der Technik, umgeben von blinkenden Schaltkreisen und brummenden Maschinen, fühlte ich den Drang nach etwas Neuem, etwas, das meine Kreativität und Leidenschaft wirklich entfachen würde. So entschied ich mich, die starren Grenzen der Elektronik zu verlassen und mich der aufregenden Welt des Frontend-Developments zuzuwenden.",
+    "ME1": "Über ein intensives Bootcamp für Softwareentwicklung, empfohlen von einem erfahrenen Programmierer, entdeckte ich meine Fähigkeit, nicht nur Code zu schreiben, sondern auch fesselnde Benutzeroberflächen zu gestalten, die Emotionen ansprechen und Nutzer begeistern.",
+    "ME2": "Meine Reise hat mich gelehrt, dass die größten Durchbrüche oft aus den mutigsten Entscheidungen entstehen. Jetzt stehe ich bereit, meine Fähigkeiten, meine Leidenschaft und meine Vision in Ihr Unternehmen einzubringen.",
+    "SKILLCONTENT": "Ich habe meine Fähigkeiten im Bereich der Frontend-Entwicklung ausgebaut, die es mir ermöglicht haben, verschiedene reale Projekte zu erstellen.",
+    "GETINTOUCH": "Kontakt aufnehmen",
+    "PORTFOLIOHEADLINE": "Hier ist eine kleine Auswahl meiner Projekte - Du kannst sie gerne frei Ausprobieren",
+    "JOININTRO": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "SHARKIEINTRO": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.",
+    "POKEDEXINTRO": "Eine einfache Bibliothek Basierend auf der PokéAPI, die Pokemon-Informationen bereitstellt und katalogisiert.",
+    "CONTACTHEAD": "Kontakt",
+    "CONTACTHEADLINE": "Sie haben ein Problem zu lösen?",
+    "CONTACTCONTENT": "Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert, Ihnen zuzuhören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "CONTACTEND": "Sie benötigen einen Frontend-Entwickler? Contact me!",
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "MESSAGE": "Nachricht",
+    "CHECKBOXMS": "Ich habe die Datenschutzbestimmungen gelesen und erkläre mich mit der Verarbeitung meiner Daten einverstanden.",
+    "MESSAGEBTN": "Senden",
+    "IMPRINT": "Impressum",
+    "PRIVACY": "Datenschutzbestimmungen"
+}

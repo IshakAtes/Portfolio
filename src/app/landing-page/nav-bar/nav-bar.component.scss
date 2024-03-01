@@ -16,7 +16,7 @@
         @include allCenter();
         flex-direction: row;
         gap: 30px;
-        width: 660px;
+        width: max-content;
         height: 32px;
         >a {
             transition: all 125ms ease-in-out;
@@ -77,7 +77,7 @@
     }
 }
 
-.langCt {
+.languageCt {
     @include allCenter();
     >a {
         text-decoration: none;
@@ -85,6 +85,7 @@
         color: whitesmoke;
         margin-right: 10px;
         margin-left: 10px;
+        cursor: pointer;
         &::after {
             content: '';
             width: 0px;
