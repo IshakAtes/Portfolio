@@ -50,7 +50,7 @@
                     />
                     <span [ngClass]="{'d-none': myForm.get('mail')?.valid || !myForm.get('mail')?.touched}">Your email is required</span>
                     <img
-                        *ngIf="myForm.get('mail')?.invalid && myForm.get('mailInput')?.touched"
+                        *ngIf="myForm.get('mail')?.invalid && myForm.get('mail')?.touched"
                         [ngStyle]="{'position': 'absolute', 'right': '14px', 'top': '12px'}"
                         src="/assets/img/warning.png"
                         alt="First Image"
@@ -97,7 +97,7 @@
                 </div>
                 
                 <div class="btnContainer">
-                    <button [ngClass]="{'enabledBtn': myForm.valid, 'disabledBtn': !myForm.valid}" id="messageBtn" [disabled]="!myForm.valid">Send message</button>
+                    <button [ngClass]="{'enabledBtn': myForm.valid, 'disabledBtn': !myForm.valid}" id="messageBtn" [disabled]="!myForm.valid">{{ "MESSAGEBTN" | translate }}</button>
                 </div>
                 
             </form>

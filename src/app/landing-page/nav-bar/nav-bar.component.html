@@ -39,13 +39,14 @@
 
 <div [ngStyle]="{'height': isActive ? '100%' : '0%'}" id="myNav" class="overlay">
     <div class="overlay-content">
-        <a href="#aboutMe">{{ "ABOUTME" | translate }}</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <div class="langCt">
-            <a href="#">DE</a>
+        <a href="#aboutMe" (click)="toggleMenu()">{{ "ABOUTME" | translate }}</a>
+        <a href="#skills" (click)="toggleMenu()">Skills</a>
+        <a href="#portfolio" (click)="toggleMenu()">Portfolio</a>
+        <a href="#contact" (click)="toggleMenu()">{{ "CONTACTHEAD" | translate }}</a>
+        <div class="languageCt">
+            <a (click)="switchLanguage('de'); toggleMenu()">DE</a>
             <span>|</span>
-            <a href="#">EN</a>
+            <a (click)="switchLanguage('en'); toggleMenu()">EN</a>
         </div>
     </div>
 </div>
