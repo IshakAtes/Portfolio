@@ -28,3 +28,23 @@
         color: #FA7902;
     }
 }
+
+@media screen and (max-width: 1400px) {
+    .privacy {
+        padding-left: 100px;
+        padding-right: 100px;
+        > .closeImg {
+            right: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .privacy {
+        padding-left: 40px;
+        padding-right: 40px;
+        > .closeImg {
+            right: 10px;
+        }
+    }
+}
