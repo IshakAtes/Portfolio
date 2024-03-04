@@ -119,14 +119,26 @@
     padding: 0 40px 0 40px;
   }
 
+  .footerLeft > span {
+    position: relative;
+    bottom: -210px;
+    width: 100%;
+}
+
   .imprint {
     position: absolute;
     bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .privacyPolicy {
     position: absolute;
     bottom: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

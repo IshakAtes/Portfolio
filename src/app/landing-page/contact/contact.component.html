@@ -1,13 +1,13 @@
 <div class="contactsMainCt">
     <div class="contactsHeadCt">
         <div></div>
-        <h2>Contact</h2>
+        <h2>{{ "CONTACTHEAD" | translate }}</h2>
     </div>
     <div class=" contactCt">
         <div class="announcementCt">
-            <span>Got a problem to solve?</span>
-            <p>Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.</p>
-            <p>Need a Frontend developer? <a href="#contact">Contact me!</a></p>
+            <span>{{ "CONTACTHEADLINE" | translate }}</span>
+            <p>{{ "CONTACTCONTENT" | translate }}</p>
+            <p>{{ "CONTACTEND" | translate }}</p><a href="#contact">{{ "CONTACTLINK" | translate }}</a>
         </div>
         <div class="formCt">
             <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
@@ -50,7 +50,7 @@
                     />
                     <span [ngClass]="{'d-none': myForm.get('mail')?.valid || !myForm.get('mail')?.touched}">Your email is required</span>
                     <img
-                        *ngIf="myForm.get('mail')?.invalid && myForm.get('mailInput')?.touched"
+                        *ngIf="myForm.get('mail')?.invalid && myForm.get('mail')?.touched"
                         [ngStyle]="{'position': 'absolute', 'right': '14px', 'top': '12px'}"
                         src="/assets/img/warning.png"
                         alt="First Image"
@@ -68,7 +68,6 @@
                         minlength="6"
                         placeholder="Your message"
                         name="text"
-                        id=""
                         cols="30"
                         rows="10"
                         formControlName="message"
@@ -94,11 +93,11 @@
                         <input required type="checkbox" formControlName="checkbox" />
                         <span class="checkmark"></span>
                     </label>
-                    <p>I've read the <span (click)="openPolicy()">privacy policy</span> and agree to the processing of my data as outlined.</p>
+                    <p>{{ "CHECKBOXMS1" | translate }}<span (click)="openPolicy()">{{ "POLICY" | translate }}</span>{{ "CHECKBOXMS2" | translate }}</p>
                 </div>
                 
                 <div class="btnContainer">
-                    <button [ngClass]="{'enabledBtn': myForm.valid, 'disabledBtn': !myForm.valid}" id="messageBtn" [disabled]="!myForm.valid">Send message</button>
+                    <button [ngClass]="{'enabledBtn': myForm.valid, 'disabledBtn': !myForm.valid}" id="messageBtn" [disabled]="!myForm.valid">{{ "MESSAGEBTN" | translate }}</button>
                 </div>
                 
             </form>

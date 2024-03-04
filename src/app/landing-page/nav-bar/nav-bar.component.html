@@ -8,17 +8,19 @@
         </div>
     </div>
     <div class="linkContainer">
-        <a href="#aboutMe" i18n>About me</a>
+        <a href="#aboutMe">{{ "ABOUTME" | translate }}</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
-        <div class="langCt">
-            <a href="#">DE</a>
+        <div class="languageCt">
+            <a (click)="switchLanguage('de')">DE</a>
             <span>|</span>
-            <a href="#">EN</a>
+            <a (click)="switchLanguage('en')">EN</a>
         </div>
     </div>
 </nav>
 
+
+<!-- MOBILE NAVBAR -->
 <nav class="navMobile">
     <div class="nameContainer">
         <span class="firstLetter">I</span>
@@ -39,13 +41,14 @@
 
 <div [ngStyle]="{'height': isActive ? '100%' : '0%'}" id="myNav" class="overlay">
     <div class="overlay-content">
-        <a href="#aboutMe">About me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+        <a href="#aboutMe" (click)="toggleMenu()">{{ "ABOUTME" | translate }}</a>
+        <a href="#skills" (click)="toggleMenu()">Skills</a>
+        <a href="#portfolio" (click)="toggleMenu()">Portfolio</a>
+        <a href="#contact" (click)="toggleMenu()">{{ "CONTACTHEAD" | translate }}</a>
         <div class="languageCt">
-            <button (click)="switchLanguage('de-CH')">DE</button>
+            <a (click)="switchLanguage('de'); toggleMenu()">DE</a>
             <span>|</span>
-            <button (click)="switchLanguage('en-US')">EN</button>
+            <a (click)="switchLanguage('en'); toggleMenu()">EN</a>
         </div>
     </div>
 </div>
