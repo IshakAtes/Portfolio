@@ -42,19 +42,20 @@
     flex-direction: column;
     gap: 70px;
     z-index: 2;
+    >.decentLine {
+        width: 70px;
+        border: 2px solid #ff4747;
+        position: absolute;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        right: calc(0px - 200px);
+        top: 70px;
+    }
     >div {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row-reverse;
-        .decentLine {
-            width: 70px;
-            border: 2px solid #ff4747;
-            right: 0;
-            position: absolute;
-            border-top-left-radius: 50px;
-            border-bottom-left-radius: 50px;
-        }
         >h2 {
             margin-top: 0;
             margin-bottom: 0;
@@ -108,6 +109,10 @@
     .skillContentCt > div > h2 {
         width: max-content;
     }
+
+    .skillContentCt > .decentLine {
+            right: calc(0px - 100px);
+        }
 }
 
 @media screen and (max-width: 1400px) {
@@ -117,8 +122,15 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .skillContentCt > div .decentLine {
-        width: 40px;
+    .skillContentCt > .decentLine {
+        width: 120px;
+        right: unset;
+        left: calc(100vw - 20vw);
+        // left: calc(100vw - 70px);
+    }
+
+    .skillContentCt > div > h2 {
+        margin-right: 30px;
     }
 
     .skillContentCt {
@@ -142,11 +154,14 @@
     }
 }
 
-@media screen and (max-width: 900px) {
-    .skillContentCt > div > h2 {
-        margin-right: 30px;
+
+@media screen and (max-width: 980px) {
+    .skillContentCt > .decentLine {
+        width: 120px;
+        left: calc(100vw - 14vw);
     }
 }
+
 
 @media screen and (max-width: 600px) {
     .skillContentCt > div > h2 {
@@ -163,5 +178,18 @@
         line-height: 19px;
         letter-spacing: 0em;
         text-align: right;
+    }
+
+    .skillContentCt > .decentLine {
+        left: calc(100vw - 20vw);
+        top: 26px;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .skillContentCt > .decentLine {
+        left: 74vw;
+        top: 26px;
     }
 }

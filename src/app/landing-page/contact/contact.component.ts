@@ -28,6 +28,10 @@ export class ContactComponent {
     });
   }
 
+  swipeUp() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   openPolicy() {
     this.router.navigateByUrl('/policys');
   }

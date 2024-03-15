@@ -11,6 +11,8 @@
 .contactsHeadCt {
     @include allCenter(flex-start, center);
     gap: 10px;
+    position: relative;
+    z-index: 2;
     >div {
         border: 2px solid #ff4747;
         width: 50px;

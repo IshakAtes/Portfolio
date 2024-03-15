@@ -4,12 +4,14 @@
         <h2>{{ "CONTACTHEAD" | translate }}</h2>
     </div>
     <div class=" contactCt">
-        <div class="announcementCt">
+        <div data-aos="fade-right"
+        data-aos-duration="1500" class="announcementCt">
             <span>{{ "CONTACTHEADLINE" | translate }}</span>
             <p>{{ "CONTACTCONTENT" | translate }}</p>
             <p>{{ "CONTACTEND" | translate }}</p><a href="#contact">{{ "CONTACTLINK" | translate }}</a>
         </div>
-        <div class="formCt">
+        <div data-aos="fade-left"
+        data-aos-duration="1500" class="formCt">
             <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
                 <div class="inputContainer">
                     <input
@@ -101,8 +103,8 @@
                 </div>
                 
             </form>
-            <a href="#header" class="fastUp">
-                <div class="upImg"></div>
+            <a class="fastUp">
+                <div (click)="swipeUp()" class="upImg"></div>
             </a>
         </div>
         <img src="/assets/img/Red 3 footer.png" alt="">
