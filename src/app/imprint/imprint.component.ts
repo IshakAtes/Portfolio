@@ -11,8 +11,7 @@ import { Router } from '@angular/router';
 export class ImprintComponent {
   constructor(private router: Router) { }
 
-  redirectToHome() {
+  redirectToHome(): void {
     this.router.navigateByUrl('**');
   }
-
 }

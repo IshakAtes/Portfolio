@@ -254,10 +254,12 @@ header {
     }
     .spreads {
         left: unset;
+        top: -14px;
     }
     
     .hero {
         left: unset;
+        top: -4px;
         width: 300px;
     }
 
@@ -295,12 +297,18 @@ header {
     .referenceCt > .referenceMail {
         display: none;
     }
+
+    .hero {
+        left: unset;
+        top: 24px;
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .spreads {
         width: 533px;
-        top: 180px;
+        top: 60px;
     }
 
     .headline > .firstText {

@@ -4,7 +4,8 @@
     background-color: #141D2F;
     @include allCenter();
     flex-direction: column;
-    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
     .portfolioHeadline {
         @include allCenter();
         flex-direction: column;
@@ -44,7 +45,7 @@
 .pjRedShape {
     width: 640px;
     height: 750px;
-    top: 1254.55px;
+    top: 3700px;
     left: -70px;
     rotate: 360deg;
     position: absolute;
