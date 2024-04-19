@@ -34,7 +34,7 @@ export class PortfolioProjectsComponent {
       "project": "Join",
       "lang": "HTML | CSS | Javascript",
       "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-      "live": "https://ishakates.com/Join/index.html",
+      "live": "https://join.ishakates.com/",
       "git": "https://github.com/IshakAtes/Join.git",
     },
     {
@@ -43,7 +43,7 @@ export class PortfolioProjectsComponent {
       "project": "Sharkie",
       "lang": "HTML | CSS | Javascript",
       "description": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
-      "live": "https://ishakates.com/sharkie/index.html",
+      "live": "https://sharkie.ishakates.com/",
       "git": "https://github.com/IshakAtes/sharkie.git",
     },
     {
@@ -52,7 +52,7 @@ export class PortfolioProjectsComponent {
       "project": "Pokedex",
       "lang": "HTML | CSS | Javascript | API",
       "description": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
-      "live": "https://ishakates.com/Pokedex/index.html",
+      "live": "https://pokedex.ishakates.com/",
       "git": "https://github.com/IshakAtes/Pokedex.git",
     },
   ];
