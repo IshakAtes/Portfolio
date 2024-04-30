@@ -163,8 +163,20 @@ section {
 }
 
 
+@media screen and (min-width: 1940px) {
+  .footerContainer {
+    padding: 0 300px 0 300px;
+  }
+}
+
 @media screen and (min-width: 2400px) {
   .footerContainer {
-    padding: 0 200px 0 200px;
+    padding: 0 500px 0 500px;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .footerContainer {
+    padding: 0 800px 0 800px;
   }
 }

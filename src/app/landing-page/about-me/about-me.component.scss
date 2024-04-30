@@ -149,23 +149,42 @@
 }
 
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1940px) {
     .aboutMeContainer {
         @include allCenter(space-between, center);
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 300px;
+        padding-right: 300px;
         overflow-y: hidden;
     }
 }
 
 @media screen and (min-width: 2400px) {
     .aboutMeContainer {
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 500px;
+        padding-right: 500px;
     }
 
     .aboutMeContainer > .aboutMeContent {
-        width: 1000px;
+        width: 700px;
+    }
+
+    .aboutMeImageCt > div {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .aboutMeContainer {
+        padding-left: 800px;
+        padding-right: 800px;
+    }
+
+    .aboutMeContainer > .aboutMeContent {
+        width: 900px;
+    }
+
+    .aboutMeImageCt > div {
+        width: 800px;
     }
 }
 

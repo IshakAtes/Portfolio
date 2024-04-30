@@ -30,9 +30,9 @@ export class PortfolioProjectsComponent {
     git: string;
   }[] = [{
       "id": 1,
-      "img": "/assets/img/Join.png",
+      "img": "/assets/img/join_IMG.jpg",
       "project": "Join",
-      "lang": "HTML | CSS | Javascript",
+      "lang": "HTML | CSS | Javascript | Bootstrap",
       "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
       "live": "https://join.ishakates.com/",
       "git": "https://github.com/IshakAtes/Join.git",
@@ -55,6 +55,15 @@ export class PortfolioProjectsComponent {
       "live": "https://pokedex.ishakates.com/",
       "git": "https://github.com/IshakAtes/Pokedex.git",
     },
+    {
+      "id": 4,
+      "img": "/assets/img/coming-soon-2550190_640.jpg",
+      "project": "Simple-CRM",
+      "lang": "Angular | HTML | SCSS | TypeScript | Firebase",
+      "description": "A very Simple Customer Relationship Management system working with CRUD functionality.",
+      "live": "",
+      "git": "https://github.com/IshakAtes/simple-CRM.git",
+    }
   ];
 
   ngOnInit() {

@@ -27,14 +27,17 @@ header {
         @media screen and (max-width: 600px) {
             top: 500px;
         }
-        @media screen and (min-width: 1900px) {
+        @media screen and (min-width: 1940px) {
             top: 250px;
         }
         @media screen and (min-width: 2000px) {
             top: 100px;
         }
         @media screen and (min-width: 2400px) {
-            top: -100px;
+            top: -20px;
+        }
+        @media screen and (min-width: 3000px) {
+            top: -220px;
         }
     }
 }
@@ -343,14 +346,60 @@ header {
 }
 
 
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1940px) {
     .hero {
-        top: 170px
+        top: 140px
+    }
+
+    .hero {
+        left: 280px;
+        width: 500px;
+    }
+
+    .spreads {
+        left: 0px;
+        top: 80px;
+    }
+
+    .referenceCt > .lineStyle {
+        width: 300px;
     }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 2400px) {
     .hero {
-        top: 140px
+        left: 480px;
+    }
+
+    .spreads {
+        left: 200px;
+    }
+
+    .textMain {
+        padding-right: 500px;
+    }
+
+    .referenceCt > .lineStyle {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .hero {
+        left: 780px;
+        top: 170px;
+    }
+
+    .spreads {
+        left: 500px;
+        top: 100px;
+    }
+
+    .textMain {
+        padding-right: 800px;
+    }
+
+    .referenceCt > .lineStyle {
+        width: 800px;
     }
 }

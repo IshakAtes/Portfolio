@@ -434,31 +434,52 @@ form {
 }
 
 
-@media screen and (min-width: 2400px) {
+@media screen and (min-width: 1940px) {
     .contactsHeadCt > h2 {
-        margin-left: 150px;
+        margin-left: 50px;
+    }
+
+    .contactsHeadCt > div {
+        width: 250px;
     }
 
     .contactCt {
-        padding-right: 200px;
-        padding-left: 200px;
+        padding-right: 300px;
+        padding-left: 300px;
     }
 
     .contactCt > .announcementCt {
         width: 700px;
     }
+}
 
-    form > div {
-        max-width: 1002px !important;
+@media screen and (min-width: 2400px) {
+    .contactsHeadCt > h2 {
+        margin-left: 140px;
     }
 
-    .inputContainer > input {
-        width: 100%;
-        max-width: 1000px;
+    .contactsHeadCt > div {
+        width: 350px;
     }
-    
-    .textContainer > textarea {
-        max-width: 1000px;
-        width: 100%;
+
+    .contactCt {
+        padding-right: 500px;
+        padding-left: 500px;
+    }
+
+    .contactCt > .announcementCt {
+        width: 700px;
+    }
+}
+
+
+@media screen and (min-width: 3000px) {
+    .contactsHeadCt > div {
+        width: 650px;
+    }
+
+    .contactCt {
+        padding-right: 800px;
+        padding-left: 800px;
     }
 }

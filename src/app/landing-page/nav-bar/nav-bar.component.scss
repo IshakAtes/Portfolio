@@ -215,8 +215,21 @@
 }
 
 
+@media screen and (min-width: 1940px) {
+    .navDefault {
+        padding: 10px 300px 10px 300px;
+    }
+}
+
+
 @media screen and (min-width: 2400px) {
     .navDefault {
-        padding: 10px 200px 10px 200px;
+        padding: 10px 500px 10px 500px;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .navDefault {
+        padding: 10px 800px 10px 800px;
     }
 }

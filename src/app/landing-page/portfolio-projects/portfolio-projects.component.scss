@@ -126,3 +126,39 @@
         width: 14vw;
     }
 }
+
+
+@media screen and (min-width: 1940px) {
+    .portFolioMainCt .portfolioHeadline .headlineCt > .decentlineRight {
+        width: 684px;
+    }
+
+    .portFolioMainCt .portfolioHeadline .headlineCt > .decentline {
+        width: 100px;
+        left: 300px;
+    }
+}
+
+
+@media screen and (min-width: 2400px) {
+    .portFolioMainCt .portfolioHeadline .headlineCt > .decentlineRight {
+        width: 884px;
+    }
+
+    .portFolioMainCt .portfolioHeadline .headlineCt > .decentline {
+        width: 300px;
+        left: 500px;
+    }
+}
+
+
+@media screen and (min-width: 3000px) {
+    .portFolioMainCt .portfolioHeadline .headlineCt > .decentlineRight {
+        width: 1184px;
+    }
+
+    .portFolioMainCt .portfolioHeadline .headlineCt > .decentline {
+        width: 480px;
+        left: 800px;
+    }
+}
