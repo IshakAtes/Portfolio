@@ -4,6 +4,7 @@
     position: relative;
     background-color: #141D2F;
     padding-top: 140px;
+    padding-bottom: 100px;
     @include allCenter(space-evenly, center);
     padding-left: 40px;
     padding-right: 40px;
@@ -146,3 +147,25 @@
     }
 
 }
+
+
+@media screen and (min-width: 2000px) {
+    .aboutMeContainer {
+        @include allCenter(space-between, center);
+        padding-left: 100px;
+        padding-right: 100px;
+        overflow-y: hidden;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .aboutMeContainer {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .aboutMeContainer > .aboutMeContent {
+        width: 1000px;
+    }
+}
+

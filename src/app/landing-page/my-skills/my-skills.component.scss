@@ -194,3 +194,39 @@
         top: 26px;
     }
 }
+
+
+@media screen and (min-width: 2000px) {
+    .mainSkillCt >.skillIconCt {
+        width: 50%
+    }
+
+    .mainSkillCt {
+        padding-left: 100px;
+        padding-right: 100px;
+        justify-content: space-between;
+    }
+
+    .skillContentCt > .decentLine {
+        right: -100px;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .mainSkillCt > img {
+        z-index: 3;
+    }
+
+    .mainSkillCt > .skillIconCt {
+        z-index: 4;
+    }
+
+    .mainSkillCt {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .skillContentCt > .decentLine {
+        right: -200px;
+    }
+}

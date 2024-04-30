@@ -432,3 +432,33 @@ form {
         }
     }
 }
+
+
+@media screen and (min-width: 2400px) {
+    .contactsHeadCt > h2 {
+        margin-left: 150px;
+    }
+
+    .contactCt {
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+
+    .contactCt > .announcementCt {
+        width: 700px;
+    }
+
+    form > div {
+        max-width: 1002px !important;
+    }
+
+    .inputContainer > input {
+        width: 100%;
+        max-width: 1000px;
+    }
+    
+    .textContainer > textarea {
+        max-width: 1000px;
+        width: 100%;
+    }
+}

@@ -213,3 +213,10 @@
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
 }
+
+
+@media screen and (min-width: 2400px) {
+    .navDefault {
+        padding: 10px 200px 10px 200px;
+    }
+}

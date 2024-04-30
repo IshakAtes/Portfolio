@@ -27,6 +27,15 @@ header {
         @media screen and (max-width: 600px) {
             top: 500px;
         }
+        @media screen and (min-width: 1900px) {
+            top: 250px;
+        }
+        @media screen and (min-width: 2000px) {
+            top: 100px;
+        }
+        @media screen and (min-width: 2400px) {
+            top: -100px;
+        }
     }
 }
 
@@ -182,6 +191,7 @@ header {
 }
 
 
+// Media Queries ------------------------------
 @media screen and (max-width: 1600px) {
     .spreads {
         left: -130px;
@@ -329,5 +339,18 @@ header {
         font-size: 29px;
         line-height: 35px;
         letter-spacing: 0em;
+    }
+}
+
+
+@media screen and (min-width: 1900px) {
+    .hero {
+        top: 170px
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .hero {
+        top: 140px
     }
 }
