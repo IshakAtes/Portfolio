@@ -61,7 +61,7 @@ export class PortfolioProjectsComponent {
       "project": "Simple-CRM",
       "lang": "Angular | HTML | SCSS | TypeScript | Firebase",
       "description": "A very Simple Customer Relationship Management system working with CRUD functionality.",
-      "live": "",
+      "live": "#",
       "git": "https://github.com/IshakAtes/simple-CRM.git",
     }
   ];
