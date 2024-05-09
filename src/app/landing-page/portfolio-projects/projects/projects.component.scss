@@ -4,8 +4,8 @@
     width: 1200px;
     @include allCenter(space-between, center);
     gap: 35px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     position: relative;
     z-index: 2;
     >img {
@@ -90,6 +90,23 @@
 }
 
 
+
+
+@media screen and (max-width: 1600px) {
+    .projectContainer {
+        width: calc(100vw - 200px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 35px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+
 @media screen and (max-width: 1300px) {
     .projectContainer > img {
         width: 400px;
@@ -118,9 +135,13 @@
         flex-direction: column;
         padding-right: 40px;
         padding-left: 40px;
-        width: 500px;
+        width: 600px;
+        >span {
+            text-align: center;
+        }
         >p {
             width: 700px;
+            text-align: center;
         }
     }
 
@@ -138,15 +159,54 @@
 }
 
 @media screen and (max-width: 800px) {
+    // .projectContainer > img {
+    //     width: 340px;
+    // }
+
+    .projectContainer > div {
+        width: calc(100vw - 80px);
+        >p {
+            width: calc(100vw - 80px);
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
     .projectContainer > img {
-        width: 340px;
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .projectContainer > img {
+        width: 240px;
     }
 
     .projectContainer > div {
-        width: 340px;
+        width: calc(100vw - 80px);
         >p {
-            width: 340px;
+            width: calc(100vw - 80px);
         }
+    }
+
+    .projectContainer > div > div {
+        width: 300px;
+    }
+
+    .testBtn {
+        padding: 15px 20px 15px 20px;
+        border-radius: 10px;
+        gap: 0px;
+    }
+
+    .gitBtn {
+        padding: 15px 20px 15px 20px;
+    }
+
+    .projectContainer > div > div {
+        justify-content: space-around;
     }
 }
 

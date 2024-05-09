@@ -92,6 +92,12 @@
         width: 10vw;
         margin-right: 20px;
     }
+
+    .pjRedShape {
+        width: 400px;
+        height: auto;
+        top: 4500px;
+    }
 }
 
 
@@ -127,6 +133,11 @@
     }
 }
 
+@media screen and (max-width: 420px) {
+    .portFolioMainCt .portfolioHeadline .headlineCt > .decentlineRight {
+        width: 10vw;
+    }
+}
 
 @media screen and (min-width: 1940px) {
     .portFolioMainCt .portfolioHeadline .headlineCt > .decentlineRight {

@@ -4,12 +4,6 @@ import { NgFor } from '@angular/common';
 import { NgClass } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
-// interface ProjectStructure {
-//   id: number;
-//   project: string | number;
-//   lang: string;
-//   description: string;
-// }[]
 
 @Component({
   selector: 'app-portfolio-projects',
@@ -38,7 +32,7 @@ export class PortfolioProjectsComponent {
       "git": "https://github.com/IshakAtes/Join.git",
     },
     {
-      "id": 2,
+      "id": 0,
       "img": "/assets/img/sharkie_mockup.png",
       "project": "Sharkie",
       "lang": "HTML | CSS | Javascript",
@@ -46,17 +40,17 @@ export class PortfolioProjectsComponent {
       "live": "https://sharkie.ishakates.com/",
       "git": "https://github.com/IshakAtes/sharkie.git",
     },
+    // {
+    //   "id": #,
+    //   "img": "/assets/img/Pkedex.png",
+    //   "project": "Pokedex",
+    //   "lang": "HTML | CSS | Javascript | API",
+    //   "description": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
+    //   "live": "https://pokedex.ishakates.com/",
+    //   "git": "https://github.com/IshakAtes/Pokedex.git",
+    // },
     {
-      "id": 3,
-      "img": "/assets/img/Pkedex.png",
-      "project": "Pokedex",
-      "lang": "HTML | CSS | Javascript | API",
-      "description": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
-      "live": "https://pokedex.ishakates.com/",
-      "git": "https://github.com/IshakAtes/Pokedex.git",
-    },
-    {
-      "id": 4,
+      "id": 2,
       "img": "/assets/img/coming-soon-2550190_640.jpg",
       "project": "Simple-CRM",
       "lang": "Angular | HTML | SCSS | TypeScript | Firebase",

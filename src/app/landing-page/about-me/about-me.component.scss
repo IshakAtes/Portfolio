@@ -5,9 +5,9 @@
     background-color: #141D2F;
     padding-top: 140px;
     padding-bottom: 100px;
-    @include allCenter(space-evenly, center);
-    padding-left: 40px;
-    padding-right: 40px;
+    @include allCenter(space-between, center);
+    padding-left: 100px;
+    padding-right: 100px;
     overflow-x: hidden;
     >img {
         z-index: 3;
@@ -110,6 +110,8 @@
 @media screen and (max-width: 1100px) {
     .aboutMeContainer {
         flex-direction: column;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .aboutMeImageCt {
@@ -145,7 +147,17 @@
         font-weight: 400;
         line-height: 19px;
     }
+}
 
+
+@media screen and (max-width: 360px) {
+    .aboutMeContainer > .aboutMeContent .myContent > div > .bulbImage {
+        padding-right: 20px;
+    }
+
+    .aboutMeContainer > .aboutMeContent .myContent > div > .puzzleImage {
+        padding-right: 20px;
+    }
 }
 
 

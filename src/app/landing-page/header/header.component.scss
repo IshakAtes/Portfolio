@@ -22,7 +22,7 @@ header {
             top: 400px;
         }
         @media screen and (max-width: 900px) {
-            top: 460px;
+            top: 440px;
         }
         @media screen and (max-width: 600px) {
             top: 500px;
@@ -137,6 +137,7 @@ header {
     bottom: 10px;
     z-index: 3;
     height: 40px;
+    margin-top: 2px;
     >.lineStyle {
         width: 100px;
         border: 2px solid #FF4747;
@@ -195,6 +196,12 @@ header {
 
 
 // Media Queries ------------------------------
+@media screen and (max-width: 1940px) {
+    .textMain {
+        padding-right: 100px;
+    }
+}
+
 @media screen and (max-width: 1600px) {
     .spreads {
         left: -130px;
@@ -204,10 +211,6 @@ header {
     .hero {
         left: 120px;
         width: 400px;
-    }
-
-    .textMain {
-        padding-right: 100px;
     }
 
     .headline {
@@ -300,6 +303,13 @@ header {
         left: 0;
     }
 
+    .textMain > a {
+        padding: 15px 30px 15px 30px;
+        margin: 5px 10px 5px 10px;
+        &:hover {
+            margin: 0px;
+        }
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -342,6 +352,39 @@ header {
         font-size: 29px;
         line-height: 35px;
         letter-spacing: 0em;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .referenceCt > .lineStyle {
+        width: 40px;
+    }
+
+    .referenceCt {
+        gap: 30px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .headline > .firstText {
+        font-size: 24px;
+        line-height: 0px;
+        padding-top: 40px;
+        min-width: 54px;
+    }
+
+    .headline > .secondText > .nameText {
+        width: 90%;
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .headline > .secondText > .devText {
+        font-size: 20px;
+        line-height: 34px;
+        width: 80vw;
     }
 }
 
