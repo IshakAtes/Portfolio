@@ -25,7 +25,7 @@ header {
             top: 440px;
         }
         @media screen and (max-width: 600px) {
-            top: 500px;
+            top: 460px;
         }
         @media screen and (min-width: 1940px) {
             top: 250px;
@@ -281,6 +281,7 @@ header {
 
     .textMain {
         padding-right: 0;
+        margin-bottom: 2px;
     }
 
     .headline > .firstText {
@@ -330,9 +331,14 @@ header {
 
 @media screen and (max-width: 600px) {
     .spreads {
-        width: 533px;
-        top: 60px;
+        width: 480px;
+        top: 50px;
     }
+
+    .hero {
+        top: 0px;
+    }
+
 
     .headline > .firstText {
         font-size: 32px;
@@ -363,6 +369,11 @@ header {
 
     .referenceCt {
         gap: 30px;
+    }
+
+    .spreads {
+        width: 400px;
+        top: 0px;
     }
 }
 
