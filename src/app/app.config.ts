@@ -27,6 +27,5 @@ export const appConfig: ApplicationConfig = {
       TranslateModule.forRoot(provideTranslation())
     ]),
     provideRouter(routes),
-    
   ]
 };

@@ -57,7 +57,6 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.myForm.value))
         .subscribe({
           next: (_response: any) => {
-
             this.myForm.reset();
           },
           error: (error: any) => {
