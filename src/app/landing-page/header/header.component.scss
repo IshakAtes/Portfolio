@@ -259,29 +259,33 @@ header {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        height: unset;
     }
 
     #curveImg {
         content: url('/assets/img/mobilVector.png');
+        top: 540px;
     }
+
     .heroCt {
         @include allCenter();
         height: 280px;
+        width: 100%;
     }
     .spreads {
         left: unset;
-        top: -14px;
+        width: max-content;
     }
     
     .hero {
         left: unset;
-        top: -4px;
-        width: 300px;
+        top: 160px;
+        width: 340px;
     }
 
     .textMain {
         padding-right: 0;
-        margin-bottom: 2px;
+        padding-top: 450px;
     }
 
     .headline > .firstText {
@@ -314,35 +318,16 @@ header {
 }
 
 @media screen and (max-width: 900px) {
-    .spreads {
-        width: 700px;
-    }
-
     .referenceCt > .referenceMail {
         display: none;
     }
 
-    .hero {
-        left: unset;
-        top: 24px;
-        width: 300px;
-    }
 }
 
-@media screen and (max-width: 600px) {
-    .spreads {
-        width: 480px;
-        top: 50px;
-    }
-
-    .hero {
-        top: 0px;
-    }
-
-
+@media screen and (max-width: 680px) {
     .headline > .firstText {
-        font-size: 32px;
-        line-height: 38px;
+        font-size: 30px;
+        line-height: 0;
     }
 
     .headline > .secondText > .nameText {
@@ -371,10 +356,6 @@ header {
         gap: 30px;
     }
 
-    .spreads {
-        width: 400px;
-        top: 0px;
-    }
 }
 
 
@@ -400,60 +381,93 @@ header {
 }
 
 
-@media screen and (min-width: 1940px) {
-    .hero {
-        top: 140px
+// @media screen and (min-width: 1940px) {
+//     .hero {
+//         top: 140px
+//     }
+
+//     .hero {
+//         left: 280px;
+//         width: 500px;
+//     }
+
+//     .spreads {
+//         left: 0px;
+//         top: 80px;
+//     }
+
+//     .referenceCt > .lineStyle {
+//         width: 300px;
+//     }
+// }
+
+// @media screen and (min-width: 2400px) {
+//     .hero {
+//         left: 480px;
+//     }
+
+//     .spreads {
+//         left: 200px;
+//     }
+
+//     .textMain {
+//         padding-right: 500px;
+//     }
+
+//     .referenceCt > .lineStyle {
+//         width: 500px;
+//     }
+// }
+
+// @media screen and (min-width: 3000px) {
+//     .hero {
+//         left: 780px;
+//         top: 170px;
+//     }
+
+//     .spreads {
+//         left: 500px;
+//         top: 100px;
+//     }
+
+//     .textMain {
+//         padding-right: 800px;
+//     }
+
+//     .referenceCt > .lineStyle {
+//         width: 800px;
+//     }
+// }
+
+
+// Mobile Height
+@media screen and (max-width: 1100px) and (max-height: 1100px) {
+    .navMobile {
+        padding: 0px 40px 0px 40px;
     }
 
     .hero {
-        left: 280px;
-        width: 500px;
+        top: 70px;
+        width: 70vw;
     }
 
     .spreads {
-        left: 0px;
-        top: 80px;
+        width: 150vw;
     }
 
-    .referenceCt > .lineStyle {
-        width: 300px;
-    }
-}
-
-@media screen and (min-width: 2400px) {
-    .hero {
-        left: 480px;
-    }
-
-    .spreads {
-        left: 200px;
+    #curveImg{
+        top: 340px;
+        height: 70vh;
     }
 
     .textMain {
-        padding-right: 500px;
-    }
-
-    .referenceCt > .lineStyle {
-        width: 500px;
+        padding-top: 300px;
     }
 }
 
-@media screen and (min-width: 3000px) {
-    .hero {
-        left: 780px;
-        top: 170px;
-    }
 
-    .spreads {
-        left: 500px;
-        top: 100px;
-    }
-
+@media screen and (max-width: 1100px) and (max-height: 860px) {
     .textMain {
-        padding-right: 800px;
-    }
-
-    .referenceCt > .lineStyle {
-        width: 800px;
+        padding-top: 170px;
     }
 }
