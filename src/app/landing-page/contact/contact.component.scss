@@ -374,6 +374,21 @@ form {
     transform: rotate(45deg);
 }
 
+.feedbackBubble {
+    text-decoration: none;
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px 10px 0px 10px;
+    gap: 10px;
+    background-color: #FF4747;
+    color: whitesmoke;
+    border: 0;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
 
 @media screen and (max-width: 1400px) {
     .contactCt > .announcementCt > p {

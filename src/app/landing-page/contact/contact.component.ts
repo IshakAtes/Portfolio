@@ -17,6 +17,7 @@ export class ContactComponent {
   myForm: FormGroup;
   minlength: number = 2;
   isButtonDisabled: boolean = true;
+  mailSended: boolean = false;
 
 
   constructor(private fb: FormBuilder, private router: Router) {
@@ -62,7 +63,13 @@ export class ContactComponent {
           error: (error: any) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => {
+            console.info('send post complete');
+            this.mailSended = true;
+            setTimeout(() => {
+              this.mailSended = false;
+            }, 3000)
+          }
         });
     }
   }

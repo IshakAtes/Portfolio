@@ -51,12 +51,12 @@ export class PortfolioProjectsComponent {
     // },
     {
       "id": 2,
-      "img": "/assets/img/coming-soon-2550190_640.jpg",
-      "project": "Simple-CRM",
+      "img": "/assets/img/dabubble.png",
+      "project": "DA-Bubble",
       "lang": "Angular | HTML | SCSS | TypeScript | Firebase",
-      "description": "A very Simple Customer Relationship Management system working with CRUD functionality.",
-      "live": "#",
-      "git": "https://github.com/IshakAtes/simple-CRM.git",
+      "description": "Chat messenger application in the style of Slack for team communication and personal chats with colleagues.",
+      "live": "https://bubble.ishakates.com/",
+      "git": "https://github.com/IshakAtes/DA-Bubble.git",
     }
   ];
 
