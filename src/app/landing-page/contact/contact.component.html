@@ -10,8 +10,10 @@
             <p>{{ "CONTACTCONTENT" | translate }}</p>
             <p>{{ "CONTACTEND" | translate }}</p><a href="#contact">{{ "CONTACTLINK" | translate }}</a>
         </div>
-        <div data-aos="fade-left"
-        data-aos-duration="1500" class="formCt">
+        <div
+        [attr.data-aos]="windowWith >= 1100 ? 'fade-left' : 'fade-up'"
+        [attr.data-aos-duration]="windowWith >= 1100 ? '1500' : null"
+        class="formCt">
             <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
                 <div class="inputContainer">
                     <input

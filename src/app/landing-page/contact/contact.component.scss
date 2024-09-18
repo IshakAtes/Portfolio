@@ -427,6 +427,7 @@ form {
 
     .contactCt > img {
         z-index: -1;
+        width: 100%;
     }
 }
 
@@ -447,7 +448,6 @@ form {
         }
     }
     .contactCt > img {
-        width: 300px;
         left: 0px;
         bottom: 0px;
         height: 700px;

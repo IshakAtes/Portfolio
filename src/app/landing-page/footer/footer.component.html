@@ -1,5 +1,7 @@
 <div class="footerContainer">
-    <div class="footerLeft" data-aos="fade-right">
+    <div
+    class="footerLeft"
+    [attr.data-aos]="windowWith >= 1100 ? 'fade-right' : 'fade-up'">
         <div>
             <span class="firstLetter">I</span>
             <span class="nameLetters">sha</span>
@@ -18,7 +20,8 @@
             </h2>
         </div>
     </div>
-    <div class="footerRight" data-aos="fade-left">
+    <div class="footerRight"
+    [attr.data-aos]="windowWith >= 1100 ? 'fade-left' : 'fade-up'">
         <a href="https://github.com/IshakAtes" target="_blank" class="gitIcon referenceIcons"></a>
         <a href="mailto:contact@ishakates.com?subject=Feedback Portfolio&body=Hallo, ich möchte Ihnen folgendes Feedback geben:" class="mailIcon referenceIcons"></a>
         <a href="https://linkedin.com/in/ishak-ates" target="_blank" class="linkedIcon referenceIcons"></a>
