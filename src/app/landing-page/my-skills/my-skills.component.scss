@@ -142,7 +142,7 @@
     }
 
     .mainSkillCt {
-        padding-top: 200px;
+        padding-top: 120px;
         padding-left: 40px;
         padding-right: 40px;
     }
@@ -191,6 +191,13 @@
     .skillContentCt > .decentLine {
         left: 74vw;
         top: 26px;
+    }
+}
+
+
+@media screen and (max-width: 400px) and (max-height: 840px) {
+    .skillContentCt > a {
+        font-size: 21px;
     }
 }
 
