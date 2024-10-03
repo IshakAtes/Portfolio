@@ -51,7 +51,7 @@ export class PortfolioProjectsComponent {
     // },
     {
       "id": 2,
-      "img": "/assets/img/dabubble.png",
+      "img": "/assets/img/bubble2.png",
       "project": "ASK-Bubble",
       "lang": "Angular | HTML | SCSS | TypeScript | Firebase",
       "description": "Chat messenger application in the style of Slack for team communication and personal chats with colleagues.",
