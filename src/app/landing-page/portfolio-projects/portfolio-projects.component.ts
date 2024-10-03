@@ -52,11 +52,11 @@ export class PortfolioProjectsComponent {
     {
       "id": 2,
       "img": "/assets/img/dabubble.png",
-      "project": "DA-Bubble",
+      "project": "ASK-Bubble",
       "lang": "Angular | HTML | SCSS | TypeScript | Firebase",
       "description": "Chat messenger application in the style of Slack for team communication and personal chats with colleagues.",
       "live": "https://bubble.ishakates.com/",
-      "git": "https://github.com/IshakAtes/DA-Bubble.git",
+      "git": "https://github.com/IshakAtes/ask-bubble.git",
     }
   ];
 
